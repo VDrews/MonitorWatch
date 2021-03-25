@@ -5,7 +5,7 @@
     <g-image alt="Example image" src="~/favicon.png" width="135" />
 
     <h1>Bienvenido a Monitor Watch!!</h1>
-
+    <span>Version 2</span>
     <p>
       MonitorWatch es un recomendador de monitores donde con un sencillo test te encontramos los monitores más acordes a tus necesidades
     </p>
@@ -29,4 +29,5 @@ export default {
 .home-links a {
   margin-right: 1rem;
 }
+
 </style>
