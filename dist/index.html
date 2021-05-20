@@ -1,12 +1,570 @@
 <!DOCTYPE html>
 <html data-html-server-rendered="true" lang="en" data-vue-tag="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
   <head>
-    <title>Hello, world! - Gridsome</title><meta name="gridsome:hash" content="c42a5a3a934706eba20e97dae0d8353f770a8197"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link rel="preload" href="/assets/css/0.styles.992f4026.css" as="style"><link rel="preload" href="/assets/js/app.ecbbad44.js" as="script"><link rel="preload" href="/assets/js/page--src--pages--index-vue.9b418354.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules--gridsome--app--pages--404-vue.5863093e.js"><link rel="prefetch" href="/assets/js/page--src--pages--about-vue.389ef94f.js"><link rel="stylesheet" href="/assets/css/0.styles.992f4026.css"><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
+    <title>Gridsome - Gridsome</title><meta name="gridsome:hash" content="3cca5a1984b63be4d0d9c98ce6ecbb64585e881b"><meta data-vue-tag="ssr" charset="utf-8"><meta data-vue-tag="ssr" name="generator" content="Gridsome v0.7.23"><meta data-vue-tag="ssr" data-key="viewport" name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta data-vue-tag="ssr" data-key="format-detection" name="format-detection" content="telephone=no"><link data-vue-tag="ssr" rel="icon" href="data:,"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="16x16" href="/assets/static/favicon.ce0531f.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="32x32" href="/assets/static/favicon.ac8d93a.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="icon" type="image/png" sizes="96x96" href="/assets/static/favicon.b9532cc.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="76x76" href="/assets/static/favicon.f22e9f3.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="152x152" href="/assets/static/favicon.62d22cb.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="120x120" href="/assets/static/favicon.1539b60.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="167x167" href="/assets/static/favicon.dc0cdc5.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="apple-touch-icon" type="image/png" sizes="180x180" href="/assets/static/favicon.7b22250.9bb7ffafafc09ac851d81afb65b8ef59.png"><link data-vue-tag="ssr" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link data-vue-tag="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="preload" href="/assets/css/0.styles.9a8f20b5.css" as="style"><link rel="preload" href="/assets/js/app.b797cffa.js" as="script"><link rel="preload" href="/assets/js/page--src--pages--index-vue.ec6fbd61.js" as="script"><link rel="prefetch" href="/assets/js/page--node-modules--gridsome--app--pages--404-vue.5863093e.js"><link rel="prefetch" href="/assets/js/page--src--pages--about-vue.389ef94f.js"><link rel="prefetch" href="/assets/js/vendors~page--src--pages--index-vue.c3544910.js"><link rel="stylesheet" href="/assets/css/0.styles.9a8f20b5.css"><style data-vue-tag="vuetify" type="text/css" id="vuetify-theme-stylesheet" nonce="undefined">.v-application a { color: #1976d2; }
+.v-application .primary {
+  background-color: #1976d2 !important;
+  border-color: #1976d2 !important;
+}
+.v-application .primary--text {
+  color: #1976d2 !important;
+  caret-color: #1976d2 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #c7fdff !important;
+  border-color: #c7fdff !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #c7fdff !important;
+  caret-color: #c7fdff !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #a8e0ff !important;
+  border-color: #a8e0ff !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #a8e0ff !important;
+  caret-color: #a8e0ff !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #8ac5ff !important;
+  border-color: #8ac5ff !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #8ac5ff !important;
+  caret-color: #8ac5ff !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #6aaaff !important;
+  border-color: #6aaaff !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #6aaaff !important;
+  caret-color: #6aaaff !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #488fef !important;
+  border-color: #488fef !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #488fef !important;
+  caret-color: #488fef !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #005eb6 !important;
+  border-color: #005eb6 !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #005eb6 !important;
+  caret-color: #005eb6 !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #00479b !important;
+  border-color: #00479b !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #00479b !important;
+  caret-color: #00479b !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #003180 !important;
+  border-color: #003180 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #003180 !important;
+  caret-color: #003180 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001e67 !important;
+  border-color: #001e67 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001e67 !important;
+  caret-color: #001e67 !important;
+}
+.v-application .secondary {
+  background-color: #424242 !important;
+  border-color: #424242 !important;
+}
+.v-application .secondary--text {
+  color: #424242 !important;
+  caret-color: #424242 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #c1c1c1 !important;
+  border-color: #c1c1c1 !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #c1c1c1 !important;
+  caret-color: #c1c1c1 !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #a6a6a6 !important;
+  border-color: #a6a6a6 !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #a6a6a6 !important;
+  caret-color: #a6a6a6 !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #8b8b8b !important;
+  border-color: #8b8b8b !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #8b8b8b !important;
+  caret-color: #8b8b8b !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #727272 !important;
+  border-color: #727272 !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #727272 !important;
+  caret-color: #727272 !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #595959 !important;
+  border-color: #595959 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #595959 !important;
+  caret-color: #595959 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #2c2c2c !important;
+  border-color: #2c2c2c !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #2c2c2c !important;
+  caret-color: #2c2c2c !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #171717 !important;
+  border-color: #171717 !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #171717 !important;
+  caret-color: #171717 !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #000000 !important;
+  border-color: #000000 !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #000000 !important;
+  caret-color: #000000 !important;
+}
+.v-application .accent {
+  background-color: #82b1ff !important;
+  border-color: #82b1ff !important;
+}
+.v-application .accent--text {
+  color: #82b1ff !important;
+  caret-color: #82b1ff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #f8ffff !important;
+  border-color: #f8ffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #f8ffff !important;
+  caret-color: #f8ffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #daffff !important;
+  border-color: #daffff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #daffff !important;
+  caret-color: #daffff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #bce8ff !important;
+  border-color: #bce8ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #bce8ff !important;
+  caret-color: #bce8ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #9fccff !important;
+  border-color: #9fccff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #9fccff !important;
+  caret-color: #9fccff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6596e2 !important;
+  border-color: #6596e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6596e2 !important;
+  caret-color: #6596e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #467dc6 !important;
+  border-color: #467dc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #467dc6 !important;
+  caret-color: #467dc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #2364aa !important;
+  border-color: #2364aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #2364aa !important;
+  caret-color: #2364aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #004c90 !important;
+  border-color: #004c90 !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #004c90 !important;
+  caret-color: #004c90 !important;
+}
+.v-application .error {
+  background-color: #ff5252 !important;
+  border-color: #ff5252 !important;
+}
+.v-application .error--text {
+  color: #ff5252 !important;
+  caret-color: #ff5252 !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffe4d5 !important;
+  border-color: #ffe4d5 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffe4d5 !important;
+  caret-color: #ffe4d5 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ffc6b9 !important;
+  border-color: #ffc6b9 !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ffc6b9 !important;
+  caret-color: #ffc6b9 !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ffa99e !important;
+  border-color: #ffa99e !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ffa99e !important;
+  caret-color: #ffa99e !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #ff8c84 !important;
+  border-color: #ff8c84 !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #ff8c84 !important;
+  caret-color: #ff8c84 !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #ff6f6a !important;
+  border-color: #ff6f6a !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #ff6f6a !important;
+  caret-color: #ff6f6a !important;
+}
+.v-application .error.darken-1 {
+  background-color: #df323b !important;
+  border-color: #df323b !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #df323b !important;
+  caret-color: #df323b !important;
+}
+.v-application .error.darken-2 {
+  background-color: #bf0025 !important;
+  border-color: #bf0025 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #bf0025 !important;
+  caret-color: #bf0025 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #9f0010 !important;
+  border-color: #9f0010 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #9f0010 !important;
+  caret-color: #9f0010 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #800000 !important;
+  border-color: #800000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #800000 !important;
+  caret-color: #800000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style><noscript data-vue-tag="ssr"><style>.g-image--loading{display:none;}</style></noscript>
   </head>
   <body >
-    <div data-server-rendered="true" id="app" class="layout"><header class="header"><strong><a href="/" aria-current="page" class="active--exact active">Gridsome</a></strong><nav class="nav"><a href="/" aria-current="page" class="nav__link active--exact active">Home</a><a href="/about/" class="nav__link">About</a></nav></header><img alt="Example image" src="data:image/svg+xml,%3csvg fill='none' viewBox='0 0 135 135' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cdefs%3e%3cfilter id='__svg-blur-5f0d66073a068a8eac8266604385c7cc'%3e%3cfeGaussianBlur in='SourceGraphic' stdDeviation='40'/%3e%3c/filter%3e%3c/defs%3e%3cimage x='0' y='0' filter='url(%23__svg-blur-5f0d66073a068a8eac8266604385c7cc)' width='135' height='135' xlink:href='data:image/png%3bbase64%2ciVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAYFUlEQVR42tWaCXAU55XHWzOyN9nNVk4DM4NBB0jckHirktQmG26QxCkhQCCMTsRtTjtrkLp1C4ID5j6k6R6diCNONk6tDQaZG11IIIEw2MSOQ7ZsKhsndmqtOfrb//u%2b7pnRYUMSG%2bOpetWj65v%2b/97/ve9oSdI/%2bJp7xSXNvVwm3jdrIYlNmjWxoaLL78yq1/5l5iV19IwLauL0C%2bp/xp1TKxGXY86qb089o96d8rqzYlKd88fm70885Qyh6/jXnNIj%2b5rfoklJzeX8fVKLK2R%2bs2YN/nlCgzoyvl7dOPuy%2bptZl9S7sy5rLL71MIu/doTNulLDpl2uZLEXXCzmnMZi62tYzOVqBuEVMS8f7QJh7EvqoyV8YYtKgvn7Ba0avQ/1u6FZ/Q4csGpOo1af0Kix%2bR1HWWLbYTa7qYLNvKjqyL5n2nnVjex7Ys%2bq3pgzqg/Z1yfXOT2TTjvdsS3H2YRTzsMcwGlnCN5LY08%2bIi5IaXFKyVddARCtLn/GAcE2/4q2DSXwp4VvHGHz2mpYQr2mx19W3bMuqx7Y3zdDANABQI89p%2bqwvz71jFM3AOgAoENw55TLh9n4k84ZvAROOq2PhPhFV1Vp0TUh/ulrrpCF14T4BS2ux5NatFyI/2jR7aNsXks5S2zU3AkNmjceAGB/HfbXKfszDPFxBADikX196usCAOpfn0gAXnO6J1%2bqYeNOOmsFgDLr2Fe/YAcshvBFbX7xFvP7yVe1qSiBOyl3jrGk1nI2r1lzw/4%2b2F8HAN0EgOzrM4IBnDMBdM0%2bap4AeCeerWRjTzgb6TMmvXZAwvsv0PbtLulpU3xboNZRCjsX3zrMFt2oZsh%2b57wrmm9uk6YDgM4BmNkPAjA9CEB3%2b08U9tfHE4BzVQTgojELhHxhALj49q7ice2LUqhPf%2bc4W9Dq8qL2vQCgI/s6BwDxc4Ky38P%2b5wL2n/K6KrJfZ2SfAJx0uiddOkwA9vIZ4ITTOvZE6RcgHjW/%2bIaY4ha3C/GLr2nDAOC9tDtH2MKrrk7YX0f96yYAf/Z7sf/0bgCmcgA97Y/a18fXlbOfvOr8rgHA8tDFp153SamG%2bJTrhvh2179B/Eept2oY7N8JAGxBiwDAs28CaBAAZgNAb/Y3ur8PADwA4AYAN01/yL5nQp3GpjQeo%2bxv4uKNGWDsybKHKL69vId4lMIIAPhr6q1qBvu7k0l8q6tL9k37J3yy/T3IvpuyH3exnMU1VLO4psMstqmWxTTWsino/Kj3P4474cyiz5xQVyaN/e8y6ak/n3n42TeuVuNqB4h7aberGRzgBgCyvx4MYG6v9tc4AGTfTdmf1VzNZrUeYXFY%2bSH77yL7dci%2bE9kvgP2fg/0TYf9v8MZ3uizkJ6%2bIxjf21YeY/fSbQnzaDRdfgi5/s8YCAK2Zv60V4ttcZH8dCyCd6t%2bf/eZuzU/Y301L34S2IwwAGBxwFvbfEHvW%2bdTUOuc/f9I9AIL1xy%2bb4h9y94dwkf0b5SL7N1xlS%2b8eZ7B/JwDoyL6efFWI783%2bAMAAwIvsexPba2np2wkH7Jt%2bQRvZ/bPQB0LgACscYIUDQuEAK2YADn7Caac07mFmnme/w5/9UOM6N%2bvdowz29wCAbgJY2A1AkP0Z7O%2be01zB5lyF3S%2bpVQAQYY4//bwagh4QCgdYsPqTJkPk5NdVCQCkp4zNzthXvsBNT9LvqqR0w/oZN1zfAID3029VMTRA7%2bKg7HP7k/iWLtlnyL57Xjs2PfXaPYifbo6LBhiKErBAuAlCQiN8tHZ36R2i66d1iMYHN%2bwh6yP7ncg%2b62r/Xru/O6njCOyv1s%2b%2bpPbh%2b/9LaigcwOfwWefLpJmXNOmRfkG0RTTC8uEIhvrXAUA37Z/M7a/1Zn8uHnv/X5tjYQr0L5nRDAnGoy0%2bo10Nzn7l0t8fZej%2b7uDaF/bXgu3PkH33go5asv8pcyw0QatxffSFB5UAz37GzfJoAPBhFiD7%2b7oDENl3mfb3JLVV09b39pxG11fFCZAQj6s0%2b%2bKXRLwhPNS4liz7w3Gyv7un/XvUP4P92ZxGdTT9LWaBUFP8nPovkXjzlfmG6yvI/tsZb1aT/b097U/d38j%2bFc2dfOsoAcimv4ULHjMgSPFNX0LxPPsdrpisd2op%2b97g7AfZnxnZ9y5or6L6vz27SZROYrMmzUPW0QukL%2b0LfWD3srvHPsX%2b/u7vSb51hACk80PQJmH9OU0PX/y0umoewe%2bnnUZcQDQhGqulOFxn4ZrUVCXNa6iW4s8e47%2bfeLG2B4CrmXdqerf/VbH4Sbqi%2bZLaKkn8O4mN6j8ZAHg86GtSnVNijEk/OXEIK0FnSMwZ1YIVopUWS%2basMf2CE7OI6xPHGHta9T8vGHdKlbCVDsFy2oqxrdhkWTGmFYstK42LPQiNbcWaxIrxrZiiLbONHoX30uxGlds/HAA%2bTuvg3V/vufT1Nz83HXxC8DbjIYjIfvP9635ynVj2muf9U%2bp6P%2b1NqFf930dv6fFz/C1CfB6EW6acFvuHv/VFD2%2bSr6v%2bRVBs1ttG/bcH2f9qkP2vcABwQBU1vx8Z2bckPmDTM8Xjaglyw7emnnGOQ6bisEQeHXRzloyr4hhs/pXA%2bBMxxgTjGQHE%2b0FhIxUFMFMxXiw2WDEYMxabrdi4c85YOCAWDoiFA2LggFhk/bvff%2b0Qhza/2WWhhzsEYC2vfyx%2bUoR4OvigrS9D96eTH8bFX4P9m7U/QPTXDAc8kP0ndxM//oTzcdzoTmyK/kRPh2Y2VTEslRlWjW0J9VqsGBsr08nLpcUdlVJKq/iMSaf8DrIK4eoYgHgdX/umXqxkMZerWBxiWkMVm9FYxcelc4j4K1UsoaWazWmtZglN5bRpuwl3JQnAGt8DVGT97kgvO78uS1/vwpuHyf581TfviisksfHBp7yJhlXHn3J%2bFSDqp189xmLPa3RO4MWGyYvs%2bBKxi0zCyhJglxqfYRVH8Zof4oRTZVbDAZMmnlZZTH0No3NF1L435ozTS0%2bb4CjvdGNcZJ7GxhZd9dKzCkzVvvnXqtiit44xTOeF5hb4WsZtvvPzBdnfOPnxT39m999v2N9KDrjfayrVPmoWN2kxXKCSeFj0/3CjPjouo5MjOkjBzbkxJlvQVgHnad8zHr1Zuj8wxbUvgH4w9XwFg/BOOl6nY3Y6cKVzRzqBonNIGpeO5mhsOqmiMwvavNEqlvTQ8wz0t3g6%2bLiXdrOCBWXfsL/G7Z8kVn7uZDRADJJr1GnogzpgspF9iB%2bM5uejI3G62el%2b8So/TqObo2cMqXeOsuRrWhV//HbVZV3Y6pS%2b91IpjRNqjKPENR9hKKFOjMWw1faLJ6AzA%2bJpk4axVbpvSh6VMjkawgHgVg2VeqPEa/%2b6ywTgr38j%2b/RHTAA4hoHU50SHDuz4Pu01BQ6gqYm/f92ZOr25ltHhKImnE%2bPZRnYM8eQ43%2bKOKtqCv5Vxvfxx8/kEHMRPkYxx6uhQNeas0xucdRI%2b0591Ei/OKoyscx2UUNrUUYN/ur0cn6P9lRzw5xRsgEwAyeLgk%2bzBARjnfgYA7aemA6JfLHygEsCNcwBTz6jrZrbUMtSnh26WDk75TQbE0435UjoqqB%2b9l36j/FvGwSzWC05p9R3xPwd43zK9oZJAentk3QBKJ1SJQjiNzYysc13U38jpKdcx7bdrHimxvvR/0t6oJBrm4ifY/szc%2bi7E%2bj%2bm7mCeufn59hblAVZrqoTpiAOIO%2btMnt16mM4K3ZQlUzzdJPUZnpU2lzf9djVDX3oj641Ki%2bhR5VLsOVWCWP41hL9K/19Aj9pndql1GlM1a52Z4rGH4cKTr2qkkSeaZjta9yxuc%2brSD49vb8h8i%2bpB8wWOvf32N09%2bPPOu17Khzq0H6CZ%2b/PJu6xNbch%2boB2Blx6077bxzAJpT5%2bzL/PzQRzdqil8oxFMj7lx29zhLv%2bk6YKxRrEuM80pa0RnXtQntRwnkx1TnQrg4liegcwNZN13Fy5rGpxMuOAqh6VlvVrH4C7t0ybFDURNayvGhFR6qD37wQas/85FXo6ovvFbhGX%2b6jH27OOcVugnHjnxL35/d3wGxcMCS9lpadlqNE6IXFrz5ErbR2scY22uKX9TGZ6BOmo3Sb5Z7ACDCOKrnWceyWZp1UfSAmefUryLrbydeqyHxH88xYM4NWF4P1LrG7U7CaZVrisfWnwMYUbq%2bU%2bqzLXt9VMULbF6T05N6o4ITM5vf/CvkiHIWd%2baQr/%2beItZnq/LW4INbeHPqAwC2n98fwtdrd2CJa06ZeVQ%2bv3r6t79gC7GrNGuSetDSd4%2byzFuVlP1Z4nxCrAOwVJemnfOv3y3GdSSy/seF6Ev0PwlGkzM6vHh%2bYWY9RWRdR1kxEr4UwpfcrtR/cCSHPZG3%2bEMpbE/uLMe%2bQha%2bL88z4dXdIOnkDqAB4y%2bX6T/6r526Y0eu3nebzCAYV2UY3US/FxSLfcf9Acy8IG5%2bToPqX7dj7LWw55u4SV/KjQpahn8Iu/8aMcY4mzROqQKbohnGOPHGfgFZtyHrpRD/HgmnRJluMuyuc%2bEd5Tr2Olx8SrvKZp7doQ8/uM7XpzCV2Usy7kpP7lKGDNit%2bBw7Zdbv5zm%2bsL15%2bpCyIj26tEgfsDsPgnN0%2b3ZFh1i3Y/8WZtuuLKMbAIzQB10Jxhs7sIQgCIuulIWi70QjQ99Nu6H1CzyhEg9mnn7vIq1S/WPQbtHcycUHbZqSWtSvz29Wh2e%2bWRs14eVtkwbvXPdx1K51LGrXGj1q9zN61B6K1Xo0Inz7Mr1PQYreJz/F03/7UmYrTj8vhe/NfRwA7gzcn88IRP%2bdMsTm8HC8KOtP7lRwRexQPP33FTPAOEkf3P9FxfIEysCx8/4uQPbpH6jEeyyg4IAeu0FkyhI4na6E9XuuNBMaXJK5AEPt83/JC/75tzenp9i2rGR98zLcffPS9b75aXrfglR/9CtM1ZF1CrdjxzICsIv/4cA9ytFwZzEbsEfxIJB5EXAHB9DfCIBgPHaIMsDVEr1XJhc92AOYFpX%2bzUb8kxV2YnCABQ6woARCTMH0iC6j49NXmfMNmON%2bvU2KPbUzZOrJFzk4e8GyVsfWlcxelOW1Fy3R7cWZiAxDdLqI4nQdwj0O7oC0RD5Q2F55SYRWwsL2Kh7A0AcGQegGwj3gUAlD9vk0ha95GTwogM/yZctfzq/2/GWhhviZjq2rma0gy2srXKLbijJ5kODggHiffUsGZf8v/YrT7HyQ8H1yOKIzfL/CwvYpOkDoA/cKEF1g7OIwGGB4IT7KgMDpD9gtPzzxuSskh7ICEHg7kvo%2btyIEIG7YS1Z2A5BBgrtDMLKfLh7mROyXuYCIA8orkVoRAwRPOEEwQIQFgxAwPGGlxQwg%2bABhexRrv%2b0yIOZKA3d//k6w5a2S7ADAs563/DHhguWyY9taiF/qsRdk6fcHwOufnwlIkQcU3kgiDypJgyuKGUB4AEWP2K/o4RS9w/CElRVT08w0eshjRikhPj8INmUVsr/SEL/iMQFkxY/shaj7/GW6vWCpbvsUANz%2bP8tkeP872P8rfKBBh8QNRx6SH8f7O4PUfAYYXoDRIyi6gxAwfGH7chmE%2bxDfE%2bIFBPyuFPY5OMGurIb4VeJ97spQ42oHgPftRasIgBcOYLbCrgC4%2bJJ0E4Tb8eJyyv5mDq84PdSEwN8MLpXXRtdsYfjaPeigQiB0ioieMKhXeMIP5VPjfB8QnuQQ9gkIfhCq8hkIX4PMPyM58laaLhCZV1Z/DQCuO0rWQPxyN5og4w4AALsJoLiLA3z2rZkk/l6/kvRvGABCyPrS4DLRwKLKlK8AwjtRWj7D1QsQOkXkQZmD6OYK3i8iygoJxu8RUUK4/BgAhRj9hXrL3y9eXivZ5DVCOK5wgaj53FV2xA1HCeo%2bb7kbMwLqfxnsLwDYugFAkHB3f579tGe6ZD/SKIGoMpn3gminnDL0cAnD1%2b6oUgUgFJ1i0CFZH3SwBwwGGJ7IsgIspZUPEZPNm8f3QyP3i7Ej9gHEoQcH0S9nLRfPxeasg/i1oYE%2bsPo/4IJ7jmISvwLiV5ADdAIgHLCEh71IrAFs5rz/QhbVfqt/nOJ0yVaSLr6AQGmIJkvRpSJzgHBqaE0xi3ICQpkCGAKCAGGECQKlQo0z8lAeiyjNJ1cUYzbgMAeVbiYXhOLnIRH7FMDOgUNyuSsi9wWAPCk/L9k2bZRs2RukPtlrpX6b8X7zhhB79nq/8L4566w2%2bZkCex4sX7CGoRm6AYAcoJsN0D8DFPZogGbz%2b6Eh3mpCEADKxM0MUcWUiGvkEFXpHKLlMsDwIXQ4QhcgZAHjUDAM3i%2b8EQcV3%2bCKEnLFTcTc4KxGHpAt5AqEFWsOC5UJxcCdOSH9C34aYt%2b80YKwIkIdmzZ0eeABB8yzy2tuOUqeYygDHQ7wAgA5QBcAljMTAOqfBc8AiE6j8cnB1kcpdLUdRJoQ%2bC8M1eTU4UdKGEB48D2dIHAQTsWAIfcKAyDcg9QCNqicT6ktEJyF6Pc3T3nZGyJs2evXowSuO4ogPH8DxD/j5gByVyFW6iYAm%2bmArjMA4%2bLFmv8EX7QVpfOs9y/MhP27ARjiVKQodO0fVGRLQ1zCwkNd8p4Rx7ewoRrcoCoEQ4/mMBQeJohAicgmCC9AeAZrhWxwZQmB%2bAsgvIrYhIiDA0aiaToQTwzYkW235zw7uN%2bGdd%2b3Pb9hARzwM9j/AgC4HUWbmD3vWQYHeOAALwAg%2b90A5AeVQAAARGPD8wJf8b2Frv%2bvRva5w/213/01TBOlMMwl%2by04rFz%2bzUiC4JI74QodMHQCISIYhojBXfsFzSSeQaW5bHB5EYcxCKtNYxb5CCXwQfhe%2bcOwXTnuAT/PYf2LNjNHASLveQYAiHVuOMALADoA6CYAezcA5ACbAQCbIGyGMt2ObVz8%2b7B6WPe671ec8snWG6bJJgROK0rdbB1eLp8bdbyEAUbnMJeiD6UgEJqAwEGoZokY5RHULwDBx0EclN2YRcgdLPJQLo%2bIg4gDuSz8QK4vbI/sceQ957Zt2uC1Z2/wAYAOALoJAOsB3V8CeSsN%2bwcAYArEQmgJxGNNUJzxR3tJGp%2ba7UbdY0H06eK5cFWGeMXMvkVAyQ0dXiHXjXppC0FwI3wABBDCEcEwoj%2bxX/Q6i/gCawuZXwGB2XM26rbN63U7B0DiAw4IAFjhB2D3T4FZnY4XVpAD7iLTg3jGizJCDQjSE/mpD9aARgAARPL3EO5/PDWiUq4Y/cstDN/TEZ5h5QoB0YNhDAkqEbM8oruCYAYIFphBZDGdAgLWJWzA1ud12yaRfQFgTQBALw0Q2ccyOAubnNUQv6QBAL4jRBviizIk%2b9a0v60LU1McXiGcMCIIwshK%2bdmRh/PZqCMFBKLTgKELEIoeKBE5CEaXxsmMfsEMGMyAwUHQNXxXNneAjewPALYg%2b3cHgAbothctZ45tq8j%2b%2b/2ryKJMq3GVHCWpf99SFDdP4k0IIcMrxd5/ZJX874jbY361hY2oVBCy2wQxvNyEIftBdGucTMAgEByGHwRNp3SN3JcD%2bxsAZAHAHgQAewAdu0EPAXBsW0Pb4PfhgAT/FFq4xGKK75ef8Y9tRkbABRBoZp/ec1uNPpzzGCBsQfjGvFRMEHQCgd/3dXFFufJpJcI4CBNGKb3HWmJvNmaA9YEGqPgB%2bADADQf4HFvXMtoGowT22/KXfpMLLsyyQnyIAQH1v%2bSz246S%2bGFV4mkQRPsPI0dVy9GII6MO57IxvyxhI2tyuSPgDA8g%2bLq7AsGEK2Q2hEKl4CB4j4jWUALbAz0AJeBD/XsAwGPPe4Y5tmBBVIBaz1vxKzTAp/yWL1ga2C8ULMV0l/XZH0iMqlZIvAkhZGS17P/Q0dXyaIA4iPiAQIz%2bRZEBQ/EaJUJAvMNpBunSOEXw6VRTaNntdeRu9Ng2r3OjBLz23PXMUfwsYiMtg/8XDjhoz1sZEJ6/zIqNUIhxLijBDZ//mRxBGH0013SABSD8TXJ0jfIEvpeBeAW/98GY40XMDwSNc0RNHhtRlcvQT9iwCppF6Iqvq/LYsMp8NnBbNrL7PATTKnAjVoFr7mET9BIc8DQWQd8JHI2tsMAB/HMH5iHj%2bSse7qnsmBqFxPudQSAQXc7p4Yq%2bo6rkafh%2bIWC8jLiOuAdHfIj4GI4gZ3TCER9FHcj%2b05MFz72L5XADGmA11gA/xRQ4Dvb/ZpczgtxVVjjA8mShcSqct1Lqn7/y79bx//PqSP6Mi62SAAAAAElFTkSuQmCC' /%3e%3c/svg%3e" width="135" data-src="/assets/static/favicon.9dd3765.9bb7ffafafc09ac851d81afb65b8ef59.png" data-srcset="/assets/static/favicon.9dd3765.9bb7ffafafc09ac851d81afb65b8ef59.png 135w" data-sizes="(max-width: 135px) 100vw, 135px" class="g-image g-image--lazy g-image--loading"><noscript><img src="/assets/static/favicon.9dd3765.9bb7ffafafc09ac851d81afb65b8ef59.png" class="g-image g-image--loaded" width="135" alt="Example image"></noscript><h1>Bienvenido a Monitor Watch!!</h1><p>
-    MonitorWatch es un recomendador de monitores donde con un sencillo test te encontramos los monitores más acordes a tus necesidades
-  </p><p class="home-links"><a href="https://github.com/VDrews/MonitorWatch" target="_blank" rel="noopener">GitHub</a></p></div>
-    <script>window.__INITIAL_STATE__={"data":null,"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.ecbbad44.js" defer></script><script src="/assets/js/page--src--pages--index-vue.9b418354.js" defer></script>
+    <div data-server-rendered="true" id="app" class="layout"><div data-app="true" id="app" class="v-application v-application--is-ltr theme--light"><div class="v-application--wrap"><div class="layout mt-12 column align-center" style="width:100vw;"><div class="elevation-12 v-card v-sheet theme--light" style="width:100%;max-width:1000px;"><div class="pa-6 pb-6" style="max-width:1000px;width:100%;"><div id="test"><div><div class="layout align-center"><div class="ml-3 font-weight-light" style="font-size:2em;">¿Qué uso le vas a darás al monitor?</div></div><div class="ml-4 subtitle"></div><div id="question" transition="fade" transition-mode="out-in"><div class="layout wrap"><div class="flex pa-2 xs6 md3"><div tabindex="0" class="pb-10 v-card v-card--hover v-card--link v-sheet v-sheet--outlined theme--light" style="height:100%;"><div class="v-image v-responsive theme--light"><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><div class="pa-4"><b class="mt-3">Gaming</b><div class="subtitle">Para jugar</div></div></div></div><div class="flex pa-2 xs6 md3"><div tabindex="0" class="pb-10 v-card v-card--hover v-card--link v-sheet v-sheet--outlined theme--light" style="height:100%;"><div class="v-image v-responsive theme--light"><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><div class="pa-4"><b class="mt-3">Creador de contenido</b><div class="subtitle">Edición de texto, hojas de cálculo, presentaciones...</div></div></div></div><div class="flex pa-2 xs6 md3"><div tabindex="0" class="pb-10 v-card v-card--hover v-card--link v-sheet v-sheet--outlined theme--light" style="height:100%;"><div class="v-image v-responsive theme--light"><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><div class="pa-4"><b class="mt-3">Oficina</b><div class="subtitle">Uso general de oficina</div></div></div></div><div class="flex pa-2 xs6 md3"><div tabindex="0" class="pb-10 v-card v-card--hover v-card--link v-sheet v-sheet--outlined theme--light" style="height:100%;"><div class="v-image v-responsive theme--light"><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><div class="pa-4"><b class="mt-3">Ver películas</b><div class="subtitle">Uso para ver películas o series</div></div></div></div><div class="flex pa-2 xs6 md3"><div tabindex="0" class="pb-10 v-card v-card--hover v-card--link v-sheet v-sheet--outlined theme--light" style="height:100%;"><div class="v-image v-responsive theme--light"><div class="v-image__image v-image__image--preload v-image__image--cover" style="background-image:;background-position:center center;"></div><div class="v-responsive__content"></div></div><div class="pa-4"><b class="mt-3">Uso General</b><div class="subtitle">No tengo ninguna preferencia en particular</div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+    <script>window.__INITIAL_STATE__={"data":{"allProductPost":{"totalCount":56,"edges":[{"node":{"name":"MONITOR LED IPS HP V27I 27\" FHD 5MS HDMI 1920X1080","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F430c1\u002F1b000\u002FA0A64190V0S09-0.jpg","brand":"HP","price":146.9,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-hp-v27i-27-fhd-5ms-hdmi-1920x1080__DYD0000012464","tags":[],"show":["Full HD"],"res_time":10,"frec":60}},{"node":{"name":"MONITOR LED 27\" VIEWSONIC VA2718-SH \u002F IPS \u002F HDMI \u002F VGA \u002F 1920x1080 \u002F 5MS \u002F 75HZ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F5b200\u002F8b98b\u002FHS--087137020A0V-0.jpg","brand":"VIEWSONIC","price":157.9,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-27-viewsonic-va2718-sh-ips-hdmi-vga-1920x1080-5ms-75hz__DYD0000011591","tags":[],"show":["Full HD"],"res_time":10,"frec":60}},{"node":{"name":"MONITOR LED 27\" ACER KA270HABID DVI\u002F HDMI\u002F VGA\u002F 1920X1080\u002F 4MS\u002F VESA 100X100","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1cb91\u002F1b000\u002F10A-EE730X0H0-0M0U-0.jpg","brand":"ACER","price":144.9,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-27-acer-ka270habid-dvi-hdmi-vga-1920x1080-4ms-vesa-100x100__DYD0000010748","tags":[],"show":["Full HD"],"res_time":10,"frec":60}},{"node":{"name":"MONITOR LED FHD LG 27\" 27MP89HM-S 5MS \u002F VGA \u002F HDMI \u002F ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F95eed\u002F5033d\u002FUEA-S--MH69981P0M0702-0.jpg","brand":"LG","price":285,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-fhd-lg-27-27mp89hm-s-5ms-vga-hdmi-altavoces__DY0000007524","tags":["Audio"],"show":["Full HD"],"res_time":8,"frec":60}},{"node":{"name":"MONITOR LED 27\" VIEWSONIC VA2732-MHD \u002F DP \u002F HDMI \u002F VGA \u002F 1920X1080 \u002F 4MS \u002F 75HZ \u002F VESA 100X100 \u002F ALTAVOCES \u002F ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F4cc40\u002F5b200\u002FDHM--027337020A0V-0.jpg","brand":"VIEWSONIC","price":166,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-27-viewsonic-va2732-mhd-dp-hdmi-vga-1920x1080-4ms-75hz-vesa-100x100-alt__DYD0000011448","tags":["Audio"],"show":["Full HD"],"res_time":8,"frec":60}},{"node":{"name":"MONITOR LED 27\"  DELL E2720HS\u002F HDMI \u002F VGA \u002F ALTAVOCES\u002F 1920 x 1080 \u002F VESA 100X100 ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F8b98b\u002F5b200\u002FSH0272E7-9-3L0L0E0D-0.jpg","brand":"DELL","price":167.9,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-27-dell-e2720hs-hdmi-vga-altavoces-1920-x-1080-vesa-100x100__DYD0000010830","tags":["Audio"],"show":["Full HD"],"res_time":8,"frec":60}},{"node":{"name":"MONITOR LED IPS GAMING LG  27GN750-B 27\" 1920 X 1080 1MS HDMI DISPLAY PORT ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--065971N0G0702-0.jpg","brand":"LG","price":369,"inches":27,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-gaming-lg-27gn750-b-27-1920-x-1080-1ms-hdmi-display-port__DYD0000011638","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED LG 24MK400H 24\" 1MS 1920 X 1080 VGA HDMI","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--H060941K0M0402-0.jpg","brand":"LG","price":132,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-24mk400h-24-1ms-1920-x-1080-vga-hdmi__DY0000006798","tags":[],"show":["Full HD"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED 24\" SAMSUNG LS24A310NHUXEN \u002F HDMI \u002F 1920X1080 \u002F 60HZ \u002F VESA 100X100","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F73db8\u002F5033d\u002FNEXUHN01430A34020S0L-0.jpg","brand":"SAMSUNG","price":113.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-24-samsung-ls24a310nhuxen-hdmi-1920x1080-60hz-vesa-100x100__DYD0000011662","tags":[],"show":["Full HD"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED IPS ASUS BE24EQSK 24\" 1920 X 1080 5MS DISPLAY PORT HDMI D-SUB ALTAVOCES CAM","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07330B--1M25300M0L0009-0.jpg","brand":"ASUS","price":230,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-asus-be24eqsk-24-1920-x-1080-5ms-display-port-hdmi-d-sub-altavoces-cam__DYD0000011029","tags":[],"show":["Full HD"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR HP V24 24\" FHD 5MS VGA\u002F HDMI\u002F 1920X1080\u002F CABLE HDMI INCLUIDO","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F430c1\u002F1b000\u002FA0A60130F0W09-0.jpg","brand":"HP","price":135,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-hp-v24-24-fhd-5ms-vga-hdmi-1920x1080-cable-hdmi-incluido__DYD0000010453","tags":[],"show":["Full HD"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR HP V24 24\" FHD 5MS VGA\u002F HDMI\u002F 1920X1080\u002F CABLE HDMI INCLUIDO","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F430c1\u002F1b000\u002FA0A63170V0S09-0.jpg","brand":"HP","price":129.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-hp-v24-24-fhd-5ms-vga-hdmi-1920x1080-cable-hdmi-incluido__DYD0000010440","tags":[],"show":["Full HD"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED IPS CURVO ASUS ROG STRIX XG43VQ 43\" 3840 X 1200 1MS DISPLAY PORT HDMI REG. ALTURA GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07110B--0825300M0L0009-0.jpg","brand":"ASUS","price":925,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-curvo-asus-rog-strix-xg43vq-43-3840-x-1200-1ms-display-port-hdmi-reg-altura-gaming__DY0000009943","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED HP V20 1600X900 HDMI\u002F VGA\u002F NEGRO","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F430c1\u002F1b000\u002FA0A6015080H01-0.jpg","brand":"HP","price":109,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-hp-v20-1600x900-hdmi-vga-negro__DY0000009395","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED 24\" VIEWSONIC VA2418-SH \u002F VGA \u002F HDMI \u002F 1920X1080 \u002F 5MS \u002F VESA 100X100 ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F5b200\u002F8b98b\u002FHS--087134020A0V-0.jpg","brand":"VIEWSONIC","price":133.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-24-viewsonic-va2418-sh-vga-hdmi-1920x1080-5ms-vesa-100x100__DY0000009013","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LG LED IPS 27\" 27MK600M-B FHD 5MS D-SUB HDMI ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--M060961K0M0702-0.jpg","brand":"LG","price":191.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-lg-led-ips-27-27mk600m-b-fhd-5ms-d-sub-hdmi__DY0000008592","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS 23.6\" VP247HAE 5MS FHD VGA HDMI","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07150B--0L21300M0L0009-0.jpg","brand":"ASUS","price":123.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-236-vp247hae-5ms-fhd-vga-hdmi__DY0000008155","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR BLUEBLEE SEYPOS TM-215 15\"\u002F LCD RESISTIVO\u002F INTERFACE TACTIL USB\u002F VESA HABILITADO\u002F NEGRO","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F6b2c0\u002F5ef99\u002FLITCAT521123-0-0M0T-0.jpg","brand":"SEYPOS","price":165.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-blueblee-seypos-tm-215-15-lcd-resistivo-interface-tactil-usb-vesa-habilitado-negro__DY0000007976","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LCD OTEKSYS 10.4\"\u002F USB\u002F SIN PEANA","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1cb91\u002F496db\u002F1C4N2506030M-0.jpg","brand":"OEM","price":193.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-lcd-oteksys-104-usb-sin-peana__DY0000007766","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED IPS ASUS VA24DQ 23.8\" 1920 X 1080 5MS HDMI D-SUB DISPLAY PORT ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07310B--3425300M0L0009-0.jpg","brand":"ASUS","price":130.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-asus-va24dq-238-1920-x-1080-5ms-hdmi-d-sub-display-port-altavoces__DY0000007697","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG IPS 27MK600M-W  27\" 1920 X 1080 5MS HDMI D-SUB ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--M060961K0M0702-0.jpg","brand":"LG","price":192,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-ips-27mk600m-w-27-1920-x-1080-5ms-hdmi-d-sub__DY0000007552","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED IPS LG 24MK600M 23.8\" FHD 5MS VGA HDMI BLANCO","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--M060961K0M0402-0.jpg","brand":"LG","price":163.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-lg-24mk600m-238-fhd-5ms-vga-hdmi-blanco__DY0000007551","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG 27\" 27UL850 4K 3840 X 2160 5MS HDMI DISPLAY PORT USB TIPO C ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--065981L0U0702-0.jpg","brand":"LG","price":499,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-27-27ul850-4k-3840-x-2160-5ms-hdmi-display-port-usb-tipo-c-altavoces__DY0000007547","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG IPS 27UL550-W 27\" 3840 X 2160 5MS HDMI DISPLAY PORT REG. ALTURA","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--065951L0U0702-0.jpg","brand":"LG","price":325,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-ips-27ul550-w-27-3840-x-2160-5ms-hdmi-display-port-reg-altura__DY0000007546","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG 25\" 25UM58-P 2560 X 1080 \u002F 5MS \u002F 21:9 \u002F HDMI","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F7d000\u002F163f5\u002FP--68951M0U0502-0.jpg","brand":"LG","price":171.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-25-25um58-p-2560-x-1080-5ms-219-hdmi__DY0000007307","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED IPS LG 27MK430H 27\" 5MS FHD VGA HDMI","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--H063941K0M0702-0.jpg","brand":"LG","price":174.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-lg-27mk430h-27-5ms-fhd-vga-hdmi__DY0000006800","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG 27MK400H 27\" FHD 2MS VGA HDMI","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--H060941K0M0702-0.jpg","brand":"LG","price":165.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-27mk400h-27-fhd-2ms-vga-hdmi__DY0000006799","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED HP OMEN 25 24.5\" FHD 1MS 2XHDMI 3XUSB 3.0 1920X1080\u002F GAMING\u002F 144HZ\u002F CABLES HDMI+USB+DISPLAYPORT INCLUIDOS","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F430c1\u002F1b000\u002FA0A67150Y070Z-0.jpg","brand":"HP","price":249,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-hp-omen-25-245-fhd-1ms-2xhdmi-3xusb-30-1920x1080-gaming-144hz-cables-hdmiusbdisp__DY0000006611","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS VG278QF 27\" 1920 X 1080 1MS HDMI DISPLAY PORT DVI-D GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07320B--3P23300M0L0009-0.jpg","brand":"ASUS","price":269,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-vg278qf-27-1920-x-1080-1ms-hdmi-display-port-dvi-d-gaming__DY0000005178","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS 24.5\" TUF GAMING VG259QM 1920 X 1080 1MS HDMI DISPLAY PORT ALTAVOCES REG. ALTURA","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07320B--0325300M0L0009-0.jpg","brand":"ASUS","price":365,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-245-tuf-gaming-vg259qm-1920-x-1080-1ms-hdmi-display-port-altavoces-reg-altura__DY0000005177","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS TUF GAMING VG279QM 27\" 1920 X 1080 1MS HDMI DISPLAY PORT ALTAVOCES REG. ALTURA","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07310B--0H25300M0L0009-0.jpg","brand":"ASUS","price":385,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-tuf-gaming-vg279qm-27-1920-x-1080-1ms-hdmi-display-port-altavoces-reg-altura__DY0000005176","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS VG279Q 27\" 1920 X 1080 3MS HDMI DVI-D DISPLAY PORT ALTAVOCES GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07310B--0G24300M0L0009-0.jpg","brand":"ASUS","price":289,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-vg279q-27-1920-x-1080-3ms-hdmi-dvi-d-display-port-altavoces-gaming__DY0000005175","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS 28\" VP28UQGL 3840 X 2160 1MS HDMI DISPLAY PORT GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07120B--0M23300M0L0009-0.jpg","brand":"ASUS","price":325,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-28-vp28uqgl-3840-x-2160-1ms-hdmi-display-port-gaming__DY0000005165","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED IPS ASUS TUF VG249Q 23.8\" 1920 X 1080 1MS  144HZ HDMI VGA DISPLAY PORT ALTAVOCES GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07110B--0E25300M0L0009-0.jpg","brand":"ASUS","price":229,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-asus-tuf-vg249q-238-1920-x-1080-1ms-144hz-hdmi-vga-display-port-altavoces-gaming__DY0000005161","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS VG24VQ 23.6\" 1920 X 1080 1MS 144HZ HDMI DISPLAY PORT ALTAVOCES GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07110B--0725300M0L0009-0.jpg","brand":"ASUS","price":239,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-vg24vq-236-1920-x-1080-1ms-144hz-hdmi-display-port-altavoces-gaming__DY0000005160","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"Monitor Led Lg IPS 32UN650-W 31.5\" 5ms 3840 x 2160 HDMI Display Port altavoces","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--065961N0U0203-0.jpg","brand":"LG","price":489,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-ips-32un650-w-315-5ms-3840-x-2160-hdmi-display-port-altavoces__DY0000004635","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"Monitor Led LG IPS 32UN500-W 31.5\" 3840 x 2160 4ms HDMI Display Port altavoces","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--060951N0U0203-0.jpg","brand":"LG","price":395,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-ips-32un500-w-315-3840-x-2160-4ms-hdmi-display-port-altavoces__DY0000004634","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG 27\" 27UL500 3840 X 2160 5MS HDMI DISPLAY PORT ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002Fa0c47\u002F163f5\u002FW--060951L0U0702-0.jpg","brand":"LG","price":295,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-27-27ul500-3840-x-2160-5ms-hdmi-display-port__DY0000004633","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED FHD LG IPS 27\" 27MP59G \u002F 5MS \u002F VGA \u002F HDMI \u002F DISPLAYPORT","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F95eed\u002F5033d\u002FUEA-P--G69951P0M0702-0.jpg","brand":"LG","price":175.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-fhd-lg-ips-27-27mp59g-5ms-vga-hdmi-displayport__DY0000004621","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"Monitor LED IPS LG 38WN75C-B 38\" 21:9 Curvo 3840 x 1600 5Ms HDMI Display Port Reg. Altura","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--C65971N0W0803-0.jpg","brand":"LG","price":1069,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-lg-38wn75c-b-38-219-curvo-3840-x-1600-5ms-hdmi-display-port-reg-altura__DY0000003340","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG IPS 43UN700-B 42.5\" 3840 X 2160 8MS HDMI DISPLAY PORT ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--060971N0U0304-0.jpg","brand":"LG","price":630,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-ips-43un700-b-425-3840-x-2160-8ms-hdmi-display-port-altavoces__DY0000003324","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED HP 24F IPS 23.8\" FHD 5MS VGA HDMI\u002F CABLE HDMI INCLUIDO","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F430c1\u002F1b000\u002FA0A60160N0X02-0.jpg","brand":"HP","price":138.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-hp-24f-ips-238-fhd-5ms-vga-hdmi-cable-hdmi-incluido__DY0000003083","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED ASUS VG258QR 24.5\" 1920 X 1080 1MS HDMI DISPLAY PORT ALTAVOCES GAMING AJUST. ALTURA","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07310B--3524300M0L0009-0.jpg","brand":"ASUS","price":269,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-vg258qr-245-1920-x-1080-1ms-hdmi-display-port-altavoces-gaming-ajust-altura__DY0000000404","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED 24\"  VIEWSONIC VX2458-P-MHD \u002F 3XHDMI \u002F DP \u002F FREESYNC \u002F 1920X1080 \u002F 144HZ \u002F 1MS \u002F VESA 100X100 ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F4cc40\u002F5b200\u002FDHM--P--087534020X0V-0.jpg","brand":"VIEWSONIC","price":193.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-24-viewsonic-vx2458-p-mhd-3xhdmi-dp-freesync-1920x1080-144hz-1ms-vesa-10__DYD0000012208","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED 24\" SAMSUNG LF24T350FHUXEN \u002F IPS \u002F VGA \u002F HDMI \u002F 1920X1080 \u002F 5MS \u002F 75HZ\u002F  VESA 100X100 ","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F73db8\u002F5033d\u002FNEXUHF05430T34020F0L-0.jpg","brand":"SAMSUNG","price":128.9,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-24-samsung-lf24t350fhuxen-ips-vga-hdmi-1920x1080-5ms-75hz-vesa-100x100__DYD0000010674","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED 24\" VIEWSONIC VX2458-MHD \u002F DP \u002F HDMI \u002F 1920X1080 \u002F 1MS \u002F 144HZ \u002F FREESYNC \u002F ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F4cc40\u002F5b200\u002FDHM--087534020X0V-0.jpg","brand":"VIEWSONIC","price":181,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-24-viewsonic-vx2458-mhd-dp-hdmi-1920x1080-1ms-144hz-freesync-altavoces__DYD0000010650","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LCD ASUS 3D 24\" VG248QE FULL HD 1MS 144HZ DVI HDMI GAMING REG. ALTURA","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F8b98b\u002F430c1\u002FSA--C1B220Q1002G3G0M0L0009-0.jpg","brand":"ASUS","price":229,"inches":24,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-lcd-asus-3d-24-vg248qe-full-hd-1ms-144hz-dvi-hdmi-gaming-reg-altura__DY0000004502","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":144}},{"node":{"name":"MONITOR LED LG 32GN550-B 31.5\" 1920 X 1080 5MS HDMI DISPLAY PORT","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--065951N0G0203-0.jpg","brand":"LG","price":325,"inches":32,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-32gn550-b-315-1920-x-1080-5ms-hdmi-display-port__DYD0000012059","tags":["Gaming"],"show":["Full HD","Gaming"],"res_time":5,"frec":165}},{"node":{"name":"MONITOR LED 22\" VIEWSONIC VA2223-H \u002F HDMI \u002F VGA \u002F 1920X1080 \u002F TN \u002F 5MS \u002F","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F5b200\u002F163f5\u002FH--037232020A0V-0.jpg","brand":"VIEWSONIC","price":110.9,"inches":22,"res":1080,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-22-viewsonic-va2223-h-hdmi-vga-1920x1080-tn-5ms__DY0000009999","tags":[],"show":["Full HD"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED LG 32GN650-B 31.5\" 2560 X 1440 5MS HDMI DISPLAY PORT GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F95eed\u002F5033d\u002FUEA--B065961N0G0203-0.jpg","brand":"LG","price":395,"inches":32,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-32gn650-b-315-2560-x-1440-5ms-hdmi-display-port-gaming__DYD0000011413","tags":["Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED LG IPS 31.5\" 32QN600-B 5MS 2560 X 1440 HDMI DISPLAY PORT","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F46308\u002F163f5\u002FB--060961N0Q0203-0.jpg","brand":"LG","price":345,"inches":32,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-ips-315-32qn600-b-5ms-2560-x-1440-hdmi-display-port__DY0000009848","tags":["Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED IPS ASUS PROART PA278QV 27\" 2560 X 1440 5MS MINI DISPLAY PORT HDMI USB HUB REG. ALTURA ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07310B--1L25300M0L0009-0.jpg","brand":"ASUS","price":355,"inches":27,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-asus-proart-pa278qv-27-2560-x-1440-5ms-mini-display-port-hdmi-usb-hub-reg-altura-a__DYD0000012672","tags":["Audio","Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED 27\" VIEWSONIC VX2705-2KP-MHD \u002F IPS \u002F QHD \u002F 2K \u002F 2X HDMI \u002F DP \u002F 1MS \u002F 144HZ \u002F ALTAVOCES","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F4cc40\u002F5b200\u002FDHM--PK2--057037020X0V-0.jpg","brand":"VIEWSONIC","price":339,"inches":27,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-27-viewsonic-vx2705-2kp-mhd-ips-qhd-2k-2x-hdmi-dp-1ms-144hz-altavoces__DYD0000011628","tags":["Audio","Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED IPS ASUS TUF VG27AQ 27\" 2560 X 1440 1MS HDMI DISPLAY PORT ALTAVOCES REG. ALTURA GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07310B--0025300M0L0009-0.jpg","brand":"ASUS","price":499,"inches":27,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-ips-asus-tuf-vg27aq-27-2560-x-1440-1ms-hdmi-display-port-altavoces-reg-altura-gaming__DY0000005171","tags":["Audio","Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED LG 27GL850-B 27\" 2560 X 1440 1MS HDMI DISPLAY PORT GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F95eed\u002F5033d\u002FUEA-B--065981L0G0702-0.jpg","brand":"LG","price":445,"inches":27,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-lg-27gl850-b-27-2560-x-1440-1ms-hdmi-display-port-gaming__DY0000004620","tags":["Audio","Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}},{"node":{"name":"MONITOR LED ASUS TUF VG27WQ 27\" 2560 X 1440 1MS HDMI DISPLAY PORT ALTAVOCES GAMING","image":"https:\u002F\u002Fimg.dynos.es\u002F234\u002F1b000\u002F289e7\u002F07E10B--0F25300M0L0009-0.jpg","brand":"ASUS","price":375,"inches":27,"res":1440,"url":"https:\u002F\u002Fwww.dynos.es\u002F\u002Fmonitor-led-asus-tuf-vg27wq-27-2560-x-1440-1ms-hdmi-display-port-altavoces-gaming__DY0000000414","tags":["Audio","Gaming"],"show":["1440p","Gaming"],"res_time":5,"frec":60}}]}},"context":{}};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script><script src="/assets/js/app.b797cffa.js" defer></script><script src="/assets/js/page--src--pages--index-vue.ec6fbd61.js" defer></script>
   </body>
 </html>
