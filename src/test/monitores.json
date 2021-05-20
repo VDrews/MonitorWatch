@@ -1,0 +1,219 @@
+[{
+    "type": "images",
+    "question": "¿Qué uso le vas a darás al monitor?",
+    "description": "",
+    "options": [{
+        "answer": "Gaming",
+        "image": "https://image.freepik.com/foto-gratis/hombres-jugando-videojuegos_137573-635.jpg",
+        "description": "Para jugar",
+        "moreThan": {
+          "res": 1080
+        },
+        "next": 1
+      },
+      {
+        "answer": "Creador de contenido",
+        "image": "https://image.freepik.com/foto-gratis/mujer-irreconocible-usando-laptop-cerca-libro_23-2147848138.jpg",
+        "description": "Edición de texto, hojas de cálculo, presentaciones...",
+        "orderByTag": "sRGB",
+        "moreThan": {
+          "res": 1080
+        },
+        "next": 4
+      },
+      {
+        "answer": "Oficina",
+        "image": "https://image.freepik.com/foto-gratis/dispositivo-moderno-app-netflix_23-2147915410.jpg",
+        "description": "Uso general de oficina",
+        "lessThan": {
+          "frec": 75,
+          "res": 1440,
+          "price": 250
+        },
+        "next": 4
+      },
+      {
+        "answer": "Ver películas",
+        "image": "https://image.freepik.com/vector-gratis/diseno-grafico-papel-pintado-geometrico_52683-34399.jpg",
+        "description": "Uso para ver películas o series",
+        "orderByTag": "Resolucion",
+        "next": 5
+      },
+      {
+        "answer": "Uso General",
+        "image": "https://image.freepik.com/foto-gratis/vlogger_23-2148161784.jpg",
+        "description": "No tengo ninguna preferencia en particular",
+        "next": 1
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Quieres que el monitor tenga apariencia gaming?",
+    "description": "En general más luces y simbolos de marca",
+    "options": [{
+        "answer": "Si",
+        "description": "Buscas una apariencia 100% gaming",
+        "contains": {
+          "tags": "Gaming"
+        },
+        "next": 2
+      },
+      {
+        "answer": "Me da igual",
+        "description": "Sin preferencias definidas",
+        "next": 2
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Que tipos de juegos piensas jugar?",
+    "description": "Normalmente a más freneticos, más prestaciones necesitarás",
+    "options": [{
+        "answer": "Indie",
+        "description": "Juegos como Minecraft, indies en general",
+        "moreThan": {
+          "frec": 75
+        },
+        "next": 5
+      },
+      {
+        "answer": "Multijugador, tipo Fornite, League of Legends",
+        "description": "Juegos sin muchos requerimientos en general",
+        "moreThan": {
+          "frec": 75
+        },
+        "next": 5
+      },
+      {
+        "answer": "Shooter",
+        "description": "Juegos de tiros, necesitaras velocidad",
+        "moreThan": {
+          "frec": 90
+        },
+        "lessThan": {
+          "res_time": 5
+        },
+        "next": 5
+      },
+      {
+        "answer": "No estoy seguro, todo tipo de juegos",
+        "description": "Cualquiera vale realmente",
+        "moreThan": {
+          "frec": 75
+        },
+        "next": 5
+      },
+      {
+        "answer": "Soy competidor competitivo",
+        "description": "Cualquiera vale realmente",
+        "moreThan": {
+          "frec": 144
+        },
+        "lessThan": {
+          "res_time": 3
+        },
+        "next": 5
+      }
+    ]
+  },
+  {
+    "type": "images",
+    "question": "¿Qué tipo de contenido haces?",
+    "description": "Según el nivel de detalle necesitarás diferentes cualidades",
+    "options": [{
+        "answer": "Diseño gŕafico",
+        "image": "https://image.flaticon.com/icons/png/512/61/61795.png",
+        "description": "Observa hasta el más mínimo detalle",
+        "moreThan": {
+          "res": 1440
+        },
+        "next": 5
+      },
+      {
+        "answer": "Edición de video",
+        "image": "https://images.unsplash.com/photo-1602491695823-65329b995f70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "description": "Visualiza cada frame",
+        "moreThan": {
+          "res": 1080
+        },
+        "next": 5
+      },
+      {
+        "answer": "Eición imagenes y fotografías",
+        "image": "https://images.unsplash.com/photo-1558980664-769d59546b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "description": "Para poder dar el más mínimo retoque",
+        "moreThan": {
+          "res": 1080
+        },
+        "next": 5
+      },
+      {
+        "answer": "Otros",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Sun_and_Moon_Pagodas_Guilin_November_2017_HDR.jpg/1600px-Sun_and_Moon_Pagodas_Guilin_November_2017_HDR.jpg",
+        "description": "Nada en específico",
+        "next": 5
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Necesitas que incorpore Audio?",
+    "description": "¿Necesitas altavoces o usaras cascos?",
+    "options": [{
+        "answer": "Si",
+        "description": "Incorporará altavoces",
+        "contains": {
+          "tags": "Audio"
+        },
+        "next": 6
+      },
+      {
+        "answer": "No",
+        "description": "Sin altavoces, usarás cascos",
+        "next": 6
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Que tamaño de monitor necesitas?",
+    "description": "",
+    "options": [{
+        "answer": "Pequeño",
+        "description": "tamaño reducido preferiblemente",
+        "lessThan": {
+          "inches": 23
+        },
+        "next": 6
+      },
+      {
+        "answer": "Normal",
+        "description": "Algo mediano",
+        "lessThan": {
+          "inches": 27
+        },
+        "moreThan": {
+          "inches": 23
+        },
+        "next": 6
+      },
+      {
+        "answer": "Grande",
+        "description": "El tamaño importa",
+        "lessThan": {
+          "inches": 27
+        },
+        "next": 6
+      }
+    ]
+  },
+  {
+    "type": "range",
+    "value": "Price",
+    "question": "Límite de Precio",
+    "description": "Cual es tu mínimo y tu máximo",
+    "next": -1
+  }
+]

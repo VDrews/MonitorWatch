@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;400;500;700;800&display=swap');
+$body-font-family: 'Commissioner';
+$title-font: 'Commissioner';
+
+body {
+  font-family: $body-font-family, sans-serif;
+}
+
+.v-application {
+  font-family: $body-font-family, sans-serif !important;
+
+  .title {
+    // To pin point specific classes of some components
+    font-family: $title-font, sans-serif !important;
+  }
+}

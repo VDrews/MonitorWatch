@@ -1,0 +1,302 @@
+[{
+    "type": "images",
+    "question": "¿Qué uso le vas a dar normalmente?",
+    "description": "",
+    "options": [{
+        "answer": "Gaming",
+        "image": "https://image.freepik.com/foto-gratis/hombres-jugando-videojuegos_137573-635.jpg",
+        "description": "Para jugar",
+        "orderByTag": "Gamer",
+        "equals": {
+          "OS": "Windows"
+        },
+        "next": 1
+      },
+      {
+        "answer": "Ofimática y Tomar Apuntes",
+        "image": "https://image.freepik.com/foto-gratis/mujer-irreconocible-usando-laptop-cerca-libro_23-2147848138.jpg",
+        "description": "Edición de texto, hojas de cálculo, presentaciones...",
+        "MoreThan": {
+          "Battery": 8
+        },
+        "lessThan": {
+          "CPU": 7,
+          "GPU": 7
+        },
+        "next": 7
+      },
+      {
+        "answer": "Entretenimiento",
+        "image": "https://image.freepik.com/foto-gratis/dispositivo-moderno-app-netflix_23-2147915410.jpg",
+        "description": "Ver videos, películas, imágenes...",
+        "MoreThan": {
+          "Battery": 8
+        },
+        "lessThan": {
+          "CPU": 7,
+          "GPU": 7
+        },
+        "next": 7
+      },
+      {
+        "answer": "Diseño Gráfico y Edición de Imágenes",
+        "image": "https://image.freepik.com/vector-gratis/diseno-grafico-papel-pintado-geometrico_52683-34399.jpg",
+        "description": "Photoshop, Illustrator...",
+        "orderByTag": "Design",
+        "MoreThan": {
+          "CPU": 6,
+          "RAM": 8,
+          "SSD": 500
+        },
+        "next": 7
+      },
+      {
+        "answer": "Edición de Vídeo o Diseño 3D",
+        "image": "https://image.freepik.com/foto-gratis/vlogger_23-2148161784.jpg",
+        "description": "After Effects, Cinema 4D, Premier, Blender...",
+        "orderByTag": "Design",
+        "moreThan": {
+          "CPU": 6,
+          "GPU": 6,
+          "RAM": 8,
+          "SSD": 1000
+        },
+        "next": 7
+      },
+      {
+        "answer": "Uso Profesional",
+        "image": "https://image.freepik.com/foto-gratis/vista-superior-ingeniero-traje-formal-que-trabaja-proyecto-construccion-usando-computadora-portatil_273609-16401.jpg",
+        "description": "Programación, Datos, Empresa...",
+        "orderByTag": "Pro",
+        "moreThan": {
+          "CPU": 5,
+          "RAM": 8
+        },
+        "next": 7
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Qué tipo de juegos vas a jugar?",
+    "description": "A más potencia, más caros y grandes",
+    "options": [{
+        "answer": "Jugar a Ultra",
+        "description": "Juegos que requieran más prestaciones (más caro)",
+        "equals": {
+          "OS": "Windows"
+        },
+        "moreThan": {
+          "CPU": 7,
+          "GPU": 8
+        },
+        "next": 2
+      },
+      {
+        "answer": "Competitivo",
+        "description": "Máximas prestaciones para jugar a competitivo sin problema",
+        "equals": {
+          "OS": "Windows"
+        },
+        "next": 2
+      },
+      {
+        "answer": "Cualquier juego",
+        "description": "Potencia suficiente para poder jugar a lo que quieras",
+        "moreThan": {
+          "CPU": 5,
+          "GPU": 6
+        },
+        "next": 2
+      },
+      {
+        "answer": "Juegos que no requieren de mucha potencia",
+        "description": "Juegos Indie, Retro, Multijugador, Emuladores...",
+        "lessThan": {
+          "CPU": 7,
+          "GPU": 7
+        },
+        "next": 2
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Vas a mover el portatil con frecuencia?",
+    "description": "Normalmente los más ligeros son o más caros o menos potentes",
+    "options": [{
+        "answer": "No voy a moverlo prácticamente",
+        "description": "Buscaremos portátiles más pesados y más potentes para reducir el precio",
+        "moreThan": {
+          "size": 4
+        },
+        "next": 3
+      },
+      {
+        "answer": "Lo moveré pocas veces",
+        "description": "Máximas prestaciones para jugar a competitivo sin problema",
+        "moreThan": {
+          "size": 2.5
+        },
+        "next": 3
+      },
+      {
+        "answer": "Lo estaré moviendo constantemente",
+        "description": "Priorizaremos que el portatil sea ligero",
+        "lessThan": {
+          "size": 4
+        },
+        "next": 3
+      },
+      {
+        "answer": "No estoy seguro",
+        "description": "No filtraremos por peso",
+        "next": 6
+      }
+    ]
+  },
+  {
+    "type": "images",
+    "question": "¿Quieres alguna característica extra?",
+    "description": "",
+    "options": [{
+        "answer": "Me da igual",
+        "image": "https://image.flaticon.com/icons/png/512/61/61795.png",
+        "description": "",
+        "next": 4
+      },
+      {
+        "answer": "4K",
+        "image": "https://images.unsplash.com/photo-1602491695823-65329b995f70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "description": "Observa hasta el más mínimo detalle",
+        "contains": {
+          "res": "4K"
+        },
+        "next": 4
+      },
+      {
+        "answer": "Alta Tasa de Refresco",
+        "image": "https://images.unsplash.com/photo-1558980664-769d59546b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "description": "Siente más fluidez a la hora de jugar",
+        "contains": {
+          "tag": "HighRefresh"
+        },
+        "next": 4
+      },
+      {
+        "answer": "HDR",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Sun_and_Moon_Pagodas_Guilin_November_2017_HDR.jpg/1600px-Sun_and_Moon_Pagodas_Guilin_November_2017_HDR.jpg",
+        "description": "Siente los colores como nunca antes",
+        "contains": {
+          "tag": "HighRefresh"
+        },
+        "next": 4
+      },
+      {
+        "answer": "RTX",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/RTX_2080.jpg/1599px-RTX_2080.jpg",
+        "description": "Iluminación increible gracias a las gráficas de última generación",
+        "contains": {
+          "tag": "RTX"
+        },
+        "next": 4
+      }
+    ]
+  },
+  {
+    "type": "range",
+    "value": "Price",
+    "question": "Límite de Precio",
+    "description": "Cual es tu mínimo y tu máximo",
+    "next": -1
+  },
+  {
+    "type": "question",
+    "question": "¿Vas a moverlo mucho de sitio?",
+    "description": "Normalmente los más ligeros son o más caros o menos potentes",
+    "options": [{
+        "answer": "Lo moveré pocas veces",
+        "description": "Menos ligero, pero más potencia por el mismo precio",
+        "moreThan": {
+          "size": 1.4
+        },
+        "next": 6
+      },
+      {
+        "answer": "Lo estaré moviendo constantemente",
+        "description": "Priorizaremos que el portatil sea muy ligero, aunque puede ser más caro",
+        "lessThan": {
+          "size": 2.5
+        },
+        "next": 6
+      },
+      {
+        "answer": "No estoy seguro",
+        "description": "No filtraremos por peso",
+        "next": 6
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿Cuanto espacio sueles ocupar?",
+    "description": "Normalmente los más ligeros son o más caros o menos potentes",
+    "options": [{
+        "answer": "Guardaré muchas peliculas o videos en el portátil",
+        "description": "Los videos y los juegos suele ser lo que mas consume, así que te pondremos 512GB como mínimo",
+        "moreThan": {
+          "SSD": 512
+        },
+        "next": 4
+      },
+      {
+        "answer": "Solo guardaré fotos y algún que otro archivo",
+        "description": "No pondremos ningún límite de espacio",
+        "next": 4
+      }
+    ]
+  },
+  {
+    "type": "question",
+    "question": "¿De qué tamaño lo estás buscando?",
+    "description": "El Tamaño lo determina el diametro de la pantalla",
+    "options": [{
+        "answer": "Me da igual",
+        "description": "",
+        "next": 3
+      },
+      {
+        "answer": "Tamaño Tablet",
+        "description": "Menos de 13 pulgadas, ideal para transportarlo sin parar",
+        "lessThan": {
+          "screen": 12.9
+        },
+        "next": 6
+      },
+      {
+        "answer": "Tamaño Normal",
+        "description": "Unas 13 pulgadas",
+        "between": {
+          "screen": [13, 14]
+        },
+        "next": 6
+      },
+      {
+        "answer": "Tamaño Grande",
+        "description": "Unas 15 pulgadas",
+        "between": {
+          "screen": [15, 16]
+        },
+        "next": 5
+      },
+      {
+        "answer": "Tamaño Gigante",
+        "description": "Más de 17 pulgadas",
+        "moreThan": {
+          "screen": 17
+        },
+        "next": 5
+      }
+    ]
+  }
+]
