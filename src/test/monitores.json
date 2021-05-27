@@ -19,7 +19,7 @@
         "moreThan": {
           "res": 1080
         },
-        "next": 4
+        "next": 3
       },
       {
         "answer": "Oficina",
@@ -30,14 +30,14 @@
           "res": 1440,
           "price": 250
         },
-        "next": 4
+        "next": 3
       },
       {
         "answer": "Ver películas",
         "image": "https://image.freepik.com/vector-gratis/diseno-grafico-papel-pintado-geometrico_52683-34399.jpg",
         "description": "Uso para ver películas o series",
         "orderByTag": "Resolucion",
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Uso General",
@@ -76,7 +76,7 @@
         "moreThan": {
           "frec": 75
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Multijugador, tipo Fornite, League of Legends",
@@ -84,7 +84,7 @@
         "moreThan": {
           "frec": 75
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Shooter",
@@ -95,7 +95,7 @@
         "lessThan": {
           "res_time": 5
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "No estoy seguro, no me importan mucho los juegos",
@@ -103,7 +103,7 @@
         "moreThan": {
           "frec": 60
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Soy competidor competitivo",
@@ -114,7 +114,7 @@
         "lessThan": {
           "res_time": 3
         },
-        "next": 5
+        "next": 4
       }
     ]
   },
@@ -129,7 +129,7 @@
         "moreThan": {
           "res": 1440
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Edición de video",
@@ -138,7 +138,7 @@
         "moreThan": {
           "res": 1080
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Eición imagenes y fotografías",
@@ -147,13 +147,13 @@
         "moreThan": {
           "res": 1080
         },
-        "next": 5
+        "next": 4
       },
       {
         "answer": "Otros",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Sun_and_Moon_Pagodas_Guilin_November_2017_HDR.jpg/1600px-Sun_and_Moon_Pagodas_Guilin_November_2017_HDR.jpg",
         "description": "Nada en específico",
-        "next": 5
+        "next": 4
       }
     ]
   },
@@ -167,12 +167,12 @@
         "contains": {
           "tags": "Audio"
         },
-        "next": 6
+        "next": 5
       },
       {
         "answer": "No",
         "description": "Sin altavoces, usarás cascos",
-        "next": 6
+        "next": 5
       }
     ]
   },
