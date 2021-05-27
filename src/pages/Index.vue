@@ -4,6 +4,8 @@
       v-layout.mt-12(column, align-center, style="width: 100vw")
         v-card.elevation-12(:class="{'mt-12': $vuetify.breakpoint.mdAndUp}", style="width: 100%; max-width: 1000px")
           .pa-6.pb-6(style="max-width: 1000px; width: 100%;")
+            h1 MonitorWatch
+            p Encuentra Monitor de la manera más sencilla haciendo nuestro test
             test
           //- h2 🔥 Los {{page.product}} más comprados
           //- v-layout.mt-4(wrap)
@@ -40,65 +42,9 @@ import Test from "@/layouts/test.vue";
 import Product from "@/components/product.vue";
 
 export default {
-  head() {
-    return {
-      title: this.page.seotitle,
-      description: this.page.seodescription,
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content: this.page.seodescription
-        },
-        { property: "og:title", content: this.page.seotitle },
-        { property: "og:description", content: this.page.seodescription },
-        { property: "og:site_name", content: "Recomendador" },
-        { property: "og:type", content: "website" },
-        // { property: 'og:image', content: ''},
-        // { property: 'og:url', content: ''},
-        { name: "twitter:title", content: this.page.seotitle },
-        { name: "twitter:description", content: this.page.seodescription },
-        // { name: 'twitter:image', content: ''},
-        { name: "twitter:image:alt", content: "Logo de Recomendador" },
-        // { name: 'twitter:card', content: '' },
-        { name: "twitter:site", content: "@versymattic" }
-      ],
-      script: [
-        {
-          type: "application/ld+json",
-          json: {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: this.page.q1,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: this.page.a1
-                }
-              },
-              {
-                "@type": "Question",
-                name: this.page.q2,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: this.page.a2
-                }
-              },
-              {
-                "@type": "Question",
-                name: this.page.q3,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: this.page.a3
-                }
-              }
-            ]
-          }
-        }
-      ]
-    };
+  metaInfo: {
+    title: "MonitorWatch",
+    description: "Encuentra tu monitor ideal",
   },
   components: {
     Test,

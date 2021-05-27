@@ -8,7 +8,13 @@
           .font-weight-bold {{ product.node.price }}€
           v-chip.font-weight-bold(v-if="product.node.tags.includes('Choice')", small, color="yellow darken-3") Recomendado
         v-layout(wrap)
-          v-chip.font-weight-bold.mr-2.my-2(v-for="(chip, c) in product.node.show", :key="c", small) {{chip}}
+          v-tooltip(bottom, v-for="(chip, c) in product.node.show", :key="c")
+            template(v-slot:activator="{ on, attrs }")
+              v-chip.font-weight-bold.mr-2.my-2(small, v-on="on", @mouseover="getWikiInfo(chip)") {{chip}}
+            span(v-if="!wikiInfo") Cargando Información
+            div(v-else)
+              span {{ wikiInfo }}
+              div.font-weight-bold Fuente: Wikipedia
       v-btn.text-capitalize(color="red", tile, @click.stop="openVideo(product.node.name)", block, depressed, small, style="position: absolute; bottom: 32px; left: 0; right: 0") 
         v-icon.mr-3(small) mdi-youtube
         span(style="letter-spacing: 0") Ver Review
@@ -31,6 +37,7 @@ export default {
   data() {
     return {
       videoUrl: null,
+      wikiInfo: null,
     }
   },
   filters: {
@@ -56,8 +63,18 @@ export default {
       } catch(err) {
         console.error(err)
       }
-    
     },
+    async getWikiInfo(name) {
+      const position = name == 'Gaming' ? 1 : 0
+      const {data} = await axios.get(`https://es.wikipedia.org/w/api.php?action=query&list=search&srprop=snippet&format=json&origin=*&utf8=&srsearch=${name}`)
+      this.wikiInfo = this.stripHtml(data.query.search[position].snippet)
+    },
+    stripHtml(html)
+    {
+      let tmp = document.createElement("div");
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || "";
+    }
   }
 };
 </script>

@@ -184,7 +184,7 @@
         "answer": "Pequeño",
         "description": "tamaño reducido preferiblemente",
         "lessThan": {
-          "inches": 23
+          "inches": 24
         },
         "next": 6
       },
@@ -195,15 +195,15 @@
           "inches": 27
         },
         "moreThan": {
-          "inches": 23
+          "inches": 25
         },
         "next": 6
       },
       {
         "answer": "Grande",
         "description": "El tamaño importa",
-        "lessThan": {
-          "inches": 27
+        "moreThan": {
+          "inches": 28
         },
         "next": 6
       }
