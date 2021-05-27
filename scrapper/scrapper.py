@@ -128,28 +128,30 @@ if __name__ == "__main__":
         'https://www.dynos.es/monitores/27-pulgadas/3840-x-2160-uhd',
         'https://www.dynos.es/monitores/28-pulgadas/3840-x-2160-uhd',
         'https://www.dynos.es/monitores/3840-x-2160-uhd/42-5-pulgadas',
+        'https://www.dynos.es/monitores/10-41-pulgadas/15-pulgadas/19-5-pulgadas/21-5-pulgadas/22-pulgadas/23-6-pulgadas/23-8-pulgadas/23-pulgadas/2560-x-1440'
     ]
-    attribs = [ {"inches":27, "res":1440, "tags": ["Audio", "Gaming"], "show": ["1440p", "Gaming"], "res_time": 5, "frec": 60},
-                {"inches":27, "res":1440, "tags": ["Audio", "Gaming"], "show": ["1440p", "Gaming", "1ms"], "res_time": 10, "frec": 60},
-                {"inches":32, "res":1440, "tags": ["Gaming"], "show": ["1440p", "Gaming"], "res_time": 5, "frec": 60},
+    attribs = [ {"inches":27, "res":1440, "tags": ["Audio", "Gaming"], "show": ["1440p", "Gaming", "Mediano"], "res_time": 5, "frec": 60},
+                {"inches":27, "res":1440, "tags": ["Audio", "Gaming"], "show": ["1440p", "Gaming", "1ms", "Mediano"], "res_time": 10, "frec": 60},
+                {"inches":31.5, "res":1440, "tags": ["Gaming"], "show": ["1440p", "Gaming", "Grande"], "res_time": 5, "frec": 60},
 
-                {"inches":22, "res":1080, "tags": [], "show": ["Full HD"], "res_time": 5, "frec": 60},
-                {"inches":32, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming"], "res_time": 5, "frec": 165},
-                {"inches":24, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming"], "res_time": 5, "frec": 144},
-                {"inches":24, "res":1080, "tags": ["Gaming", "Audio"], "show": ["Full HD", "Gaming"], "res_time": 5, "frec": 144},
-                {"inches":24, "res":1080, "tags": [], "show": ["Full HD"], "res_time": 5, "frec": 60},
-                {"inches":24, "res":1080, "tags": ["Audio"], "show": ["Full HD"], "res_time": 5, "frec": 75},
-                {"inches":27, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming"], "res_time": 5, "frec": 60},
-                {"inches":27, "res":1080, "tags": ["Gaming", "Audio"], "show": ["Full HD", "Gaming"], "res_time": 3, "frec": 144},
-                {"inches":27, "res":1080, "tags": ["Audio"], "show": ["Full HD"], "res_time": 8, "frec": 60},
-                {"inches":27, "res":1080, "tags": [], "show": ["Full HD"], "res_time": 10, "frec": 60},
+                {"inches":22, "res":1080, "tags": [], "show": ["Full HD", "Pequeño"], "res_time": 5, "frec": 60},
+                {"inches":31.5, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming", "Grande"], "res_time": 5, "frec": 165},
+                {"inches":24, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 5, "frec": 144},
+                {"inches":24, "res":1080, "tags": ["Gaming", "Audio"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 5, "frec": 144},
+                {"inches":24, "res":1080, "tags": [], "show": ["Full HD", "Mediano"], "res_time": 5, "frec": 60},
+                {"inches":24, "res":1080, "tags": ["Audio"], "show": ["Full HD", "Mediano"], "res_time": 5, "frec": 75},
+                {"inches":27, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 5, "frec": 60},
+                {"inches":27, "res":1080, "tags": ["Gaming", "Audio"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 3, "frec": 144},
+                {"inches":27, "res":1080, "tags": ["Audio"], "show": ["Full HD", "Mediano"], "res_time": 8, "frec": 60},
+                {"inches":27, "res":1080, "tags": [], "show": ["Full HD", "Mediano"], "res_time": 10, "frec": 60},
             
 
 
 
                 {"inches": 27, "res": 2160, "tags": ["Audio"], "show": ["UHD", "Display Port"], "res_time": 5, "frec": 60},
-                {"inches": 28, "res": 2160, "tags": ["Audio", "Gaming"], "show": ["UHD", "Gaming"], "res_time": 1, "frec": 60},
-                {"inches": 43, "res": 2160, "tags": ["Audio", "Gaming"], "show": ["UHD", "Gaming"], "res_time": 8, "frec": 60},
+                {"inches": 28, "res": 2160, "tags": ["Audio", "Gaming"], "show": ["UHD", "Gaming", "Grande"], "res_time": 1, "frec": 60},
+                {"inches": 42.5, "res": 2160, "tags": ["Audio", "Gaming"], "show": ["UHD", "Gaming", "Grande"], "res_time": 8, "frec": 60},
+                {"inches": 23, "res": 1440, "tags": [], "show": ["Pequeño", "1440p"], "res_time": 8, "frec": 60}
             ]
     linkIndex = 0
     lista_result = []
