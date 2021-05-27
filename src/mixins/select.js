@@ -83,6 +83,7 @@ let mixin = {
         )
       }
 
+      console.log("OPCION ELEGIDA", option)
       this.$emit("next", option.next);
     }
   }
