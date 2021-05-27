@@ -93,7 +93,7 @@
           "frec": 90
         },
         "lessThan": {
-          "res_time": 5
+          "res_time": 4
         },
         "next": 4
       },
@@ -141,7 +141,7 @@
         "next": 4
       },
       {
-        "answer": "Eición imagenes y fotografías",
+        "answer": "Edición imagenes y fotografías",
         "image": "https://images.unsplash.com/photo-1558980664-769d59546b3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
         "description": "Para poder dar el más mínimo retoque",
         "moreThan": {
