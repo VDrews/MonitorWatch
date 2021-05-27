@@ -22,7 +22,7 @@ from pymongo import MongoClient
 # res_time
 # frec
 
-#def get_proxies():
+# def get_proxies():
 #    url = 'https://free-proxy-list.net/'
 #    response = requests.get(url)
 #    parser = fromstring(response.text)
@@ -35,8 +35,6 @@ from pymongo import MongoClient
 #    return proxies
 
 no_pages = 4  # no of pages to scrape in the website (provide it via arguments)
-
-
 
 
 findingElement = 'li'
@@ -56,18 +54,18 @@ findingUrl = 'card-product-img'
 # proxy_pool = cycle(proxies)
 
 
-def get_data(pageNo, q, link):
+def get_data(pageNo, q, linkItem):
     # proxy = next(proxy_pool)
     # proxies={"http": proxy, "https": proxy}
     headers = {"User-Agent": "Mozilla/5.0", "Accept-Encoding": "gzip, deflate",
                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "DNT": "1", "Connection": "close", "Upgrade-Insecure-Requests": "1"}
-    r = requests.get(link+'?pagina='+str(pageNo), headers=headers)
-    #print(r.text)
+    r = requests.get(linkItem["link"]+'?pagina='+str(pageNo), headers=headers)
+    # print(r.text)
     content = r.content
     soup = BeautifulSoup(content)
-    print(soup.head.title)
+
     for d in soup.findAll(findingElement, attrs={'class': findingClass}):
-        #print(d.text)
+        # print(d.text)
         name = d.find('div', attrs={'class': findingName})
         #brand = d.find('article', attrs={'class': findingBrand})
         price = d.find('a', attrs={'class': findingPrice})
@@ -82,7 +80,7 @@ def get_data(pageNo, q, link):
         if name is not None:
             all.append(name['data-name'])
         else:
-          all.append("unknown-product")
+            all.append("unknown-product")
         if brand is not None:
             all.append(brand['content'])
         else:
@@ -95,7 +93,7 @@ def get_data(pageNo, q, link):
             all.append(image['src'])
         else:
             all.append('')
-            #all.append('')
+            # all.append('')
         if url is not None:
             all.append('https://www.dynos.es/' + url['dirzone'])
         else:
@@ -110,52 +108,91 @@ def get_data(pageNo, q, link):
 
 
 if __name__ == "__main__":
-    links = [
-        'https://www.dynos.es/monitores/27-pulgadas/2560-x-1440',
-        'https://www.dynos.es/monitores/27-pulgadas/2560-x-1440/1-ms',
-        'https://www.dynos.es/monitores/31-5-pulgadas/2560-x-1440',
-        
-        'https://www.dynos.es/monitores/22-pulgadas/1920-x-1080-full-hd',
-        'https://www.dynos.es/monitores/31-5-pulgadas/1920-x-1080-full-hd',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming/altavoces',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/altavoces',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/gaming',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/gaming/altavoces',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/altavoces',
-        'https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/',
-        'https://www.dynos.es/monitores/27-pulgadas/3840-x-2160-uhd',
-        'https://www.dynos.es/monitores/28-pulgadas/3840-x-2160-uhd',
-        'https://www.dynos.es/monitores/3840-x-2160-uhd/42-5-pulgadas',
-        'https://www.dynos.es/monitores/10-41-pulgadas/15-pulgadas/19-5-pulgadas/21-5-pulgadas/22-pulgadas/23-6-pulgadas/23-8-pulgadas/23-pulgadas/2560-x-1440'
+    linkList = [
+        {
+            "link": 'https://www.dynos.es/monitores/27-pulgadas/2560-x-1440',
+            "attrs": {"inches": 27, "res": 1440, "tags": ["Audio", "Gaming"], "show": [
+                "1440p", "Gaming"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/27-pulgadas/2560-x-1440/1-ms",
+            "attrs": {"inches": 27, "res": 1440, "tags": ["Audio", "Gaming"], "show": [
+                "1440p", "Gaming", "1ms"], "res_time": 10, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/31-5-pulgadas/2560-x-1440",
+            "attrs": {"inches": 31.5, "res": 1440, "tags": ["Gaming"], "show": [
+                "1440p", "Gaming"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/22-pulgadas/1920-x-1080-full-hd",
+            "attrs": {"inches": 22, "res": 1080, "tags": [], "show": [
+                "Full HD"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/31-5-pulgadas/1920-x-1080-full-hd",
+            "attrs": {"inches": 31.5, "res": 1080, "tags": ["Gaming"], "show": [
+                "Full HD", "Gaming"], "res_time": 5, "frec": 165}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming",
+            "attrs": {"inches": 24, "res": 1080, "tags": ["Gaming"], "show": [
+                "Full HD", "Gaming"], "res_time": 5, "frec": 144}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming/altavoces",
+            "attrs": {"inches": 24, "res": 1080, "tags": ["Gaming", "Audio"], "show": [
+                "Full HD", "Gaming"], "res_time": 5, "frec": 144}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/",
+            "attrs": {"inches": 24, "res": 1080, "tags": [], "show": [
+                "Full HD"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/altavoces",
+            "attrs": {"inches": 24, "res": 1080, "tags": ["Audio"], "show": [
+                "Full HD"], "res_time": 5, "frec": 75}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/gaming",
+            "attrs": {"inches": 27, "res": 1080, "tags": ["Gaming"], "show": [
+                "Full HD", "Gaming"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/gaming/altavoces",
+            "attrs": {"inches": 27, "res": 1080, "tags": ["Gaming", "Audio"], "show": [
+                "Full HD", "Gaming"], "res_time": 3, "frec": 144}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/altavoces",
+            "attrs": {"inches": 27, "res": 1080, "tags": ["Audio"], "show": [
+                "Full HD"], "res_time": 8, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/",
+            "attrs": {"inches": 27, "res": 1080, "tags": [], "show": [
+                "Full HD"], "res_time": 10, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/27-pulgadas/3840-x-2160-uhd",
+            "attrs": {"inches": 27, "res": 2160, "tags": ["Audio"], "show": [
+                "UHD", "Display Port"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/28-pulgadas/3840-x-2160-uhd",
+            "attrs": {"inches": 28, "res": 2160, "tags": ["Audio", "Gaming"], "show": [
+                "UHD", "Gaming"], "res_time": 1, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/3840-x-2160-uhd/42-5-pulgadas",
+            "attrs": {"inches": 42.5, "res": 2160, "tags": ["Audio", "Gaming"], "show": [
+                "UHD", "Gaming"], "res_time": 8, "frec": 60}
+        },
     ]
-    attribs = [ {"inches":27, "res":1440, "tags": ["Audio", "Gaming"], "show": ["1440p", "Gaming", "Mediano"], "res_time": 5, "frec": 60},
-                {"inches":27, "res":1440, "tags": ["Audio", "Gaming"], "show": ["1440p", "Gaming", "1ms", "Mediano"], "res_time": 10, "frec": 60},
-                {"inches":31.5, "res":1440, "tags": ["Gaming"], "show": ["1440p", "Gaming", "Grande"], "res_time": 5, "frec": 60},
-
-                {"inches":22, "res":1080, "tags": [], "show": ["Full HD", "Pequeño"], "res_time": 5, "frec": 60},
-                {"inches":31.5, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming", "Grande"], "res_time": 5, "frec": 165},
-                {"inches":24, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 5, "frec": 144},
-                {"inches":24, "res":1080, "tags": ["Gaming", "Audio"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 5, "frec": 144},
-                {"inches":24, "res":1080, "tags": [], "show": ["Full HD", "Mediano"], "res_time": 5, "frec": 60},
-                {"inches":24, "res":1080, "tags": ["Audio"], "show": ["Full HD", "Mediano"], "res_time": 5, "frec": 75},
-                {"inches":27, "res":1080, "tags": ["Gaming"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 5, "frec": 60},
-                {"inches":27, "res":1080, "tags": ["Gaming", "Audio"], "show": ["Full HD", "Gaming", "Mediano"], "res_time": 3, "frec": 144},
-                {"inches":27, "res":1080, "tags": ["Audio"], "show": ["Full HD", "Mediano"], "res_time": 8, "frec": 60},
-                {"inches":27, "res":1080, "tags": [], "show": ["Full HD", "Mediano"], "res_time": 10, "frec": 60},
-            
-
-
-
-                {"inches": 27, "res": 2160, "tags": ["Audio"], "show": ["UHD", "Display Port"], "res_time": 5, "frec": 60},
-                {"inches": 28, "res": 2160, "tags": ["Audio", "Gaming"], "show": ["UHD", "Gaming", "Grande"], "res_time": 1, "frec": 60},
-                {"inches": 42.5, "res": 2160, "tags": ["Audio", "Gaming"], "show": ["UHD", "Gaming", "Grande"], "res_time": 8, "frec": 60},
-                {"inches": 23, "res": 1440, "tags": [], "show": ["Pequeño", "1440p"], "res_time": 8, "frec": 60}
-            ]
     linkIndex = 0
     lista_result = []
-    while linkIndex < len(links):
+    while linkIndex < len(linkList):
         m = Manager()
         q = m.Queue()
         p = {}
@@ -170,7 +207,7 @@ if __name__ == "__main__":
         for i in range(1, no_pages):
             print("starting thread: ", i)
             p[i] = threading.Thread(target=get_data, args=(
-                i, q, links[linkIndex]))
+                i, q, linkList[linkIndex]))
             p[i].start()
         for i in range(1, no_pages):  # join all the threads/processes
             p[i].join()
@@ -183,25 +220,27 @@ if __name__ == "__main__":
             images.append(queue_top[3])
             urls.append(queue_top[4])
             ids.append(queue_top[5])
-            result={"_id":ids[qcount-1], "name": products[qcount-1], "brand": brands[qcount-1], "price": float(prices[qcount-1]), "inches":attribs[linkIndex]["inches"], "res":attribs[linkIndex]["res"], "tags":attribs[linkIndex]["tags"], "show":attribs[linkIndex]["show"], "frec":attribs[linkIndex]["frec"], "res_time":attribs[linkIndex]["res_time"], "url":urls[qcount-1], "img":images[qcount-1]}
+            result = {"_id": ids[qcount-1], "name": products[qcount-1], "brand": brands[qcount-1], "price": float(prices[qcount-1]), "inches": linkList[linkIndex]["attrs"]["inches"], "res": linkList[linkIndex]["attrs"]["res"], "tags":
+                      linkList[linkIndex]["attrs"]["tags"], "show": linkList[linkIndex]["attrs"]["show"], "frec": linkList[linkIndex]["attrs"]["frec"], "res_time": linkList[linkIndex]["attrs"]["res_time"], "url": urls[qcount-1], "img": images[qcount-1]}
             if not any(d['_id'] == result["_id"] for d in lista_result):
                 lista_result.append(dict(result))
         print("total time taken: ", str(
             time.time()-startTime), " qcount: ", qcount)
         print([len(products), len(brands), len(prices),
-              len(images), len(urls)])
+               len(images), len(urls)])
         # print([len(products), len(prices)])
-        #df = pd.DataFrame({'name': products, 'brand': brands, 'Price': prices,
-                            #'image': images, 'url': urls})
+        # df = pd.DataFrame({'name': products, 'brand': brands, 'Price': prices,
+        # 'image': images, 'url': urls})
         # df = pd.DataFrame({'Product Name':prices})
         # df.to_csv('monitores.csv', mode='a',
-                  # index=False, header=False, encoding='utf-8')
-    
+        # index=False, header=False, encoding='utf-8')
+
+        print("Siguiente LINK: ")
         linkIndex += 1
-    print(ids)
-    print(len(lista_result))
-    client = MongoClient("mongodb+srv://chemon:CHEMON@cluster0.xx7nr.mongodb.net/monitorwatch?retryWrites=true&w=majority")
+
+    client = MongoClient(
+        "mongodb+srv://chemon:CHEMON@cluster0.xx7nr.mongodb.net/monitorwatch?retryWrites=true&w=majority")
     # res_list = [i for n, i in enumerate(lista_result) if i not in lista_result[n + 1:]]
-    db=client.monitorwatch
-    monitores=db.monitores
+    db = client.monitorwatch
+    monitores = db.monitores
     db.monitores.insert_many(lista_result, ordered=False)
