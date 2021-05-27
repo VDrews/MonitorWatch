@@ -74,7 +74,7 @@ let mixin = {
       if (typeof option.orderByTag != 'undefined') {
         products = products.sort(function (first, second) {
           // Contain values first
-          return (first.tags.includes(option.orderByTag) && second.tags.includes(option.orderByTag)) ? 0 : first.tags.includes(option.orderByTag) ? -1 : 1;
+          return (first.node.tags.includes(option.orderByTag) && second.node.tags.includes(option.orderByTag)) ? 0 : first.node.tags.includes(option.orderByTag) ? -1 : 1;
         })
         console.log("AFTER", products)
         this.$emit(

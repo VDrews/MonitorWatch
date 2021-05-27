@@ -98,10 +98,10 @@
         "next": 5
       },
       {
-        "answer": "No estoy seguro, todo tipo de juegos",
+        "answer": "No estoy seguro, no me importan mucho los juegos",
         "description": "Cualquiera vale realmente",
         "moreThan": {
-          "frec": 75
+          "frec": 60
         },
         "next": 5
       },
