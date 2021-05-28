@@ -1,17 +1,24 @@
 <template lang="pug">
-  #test
-    div(v-if="!isResult")
-      v-layout(align-center)
-        .ml-3.font-weight-light(style="font-size: 2em") {{ questions[actualTest].question }}
-      .ml-4.subtitle {{ questions[actualTest].description }}
-      component(:is="questions[actualTest].type", :question="questions[actualTest]", v-model="monitores", @next="nextTest", transition="fade", transition-mode="out-in") 
-    div(v-else)
-      .font-weight-light(style="font-size: 2em") Te recomendamos estos Portátiles
-      .subtitle Según los gustos que nos has indicado
-      v-btn.mt-4.text-capitalize(text, @click="resetTest") Repetir Test
-      v-layout.mt-4(wrap)
-        v-flex.pa-1(xs6, md3, v-for="(el, i) in monitores", :key="i")
-          product(:product="el", style="height: 100%")
+#test
+  div(v-if="!isResult")
+    v-layout(align-center)
+      .ml-3.font-weight-light(style="font-size: 2em") {{ questions[actualTest].question }}
+    .ml-4.subtitle {{ questions[actualTest].description }}
+    component(
+      :is="questions[actualTest].type",
+      :question="questions[actualTest]",
+      v-model="monitores",
+      @next="nextTest",
+      transition="fade",
+      transition-mode="out-in"
+    ) 
+  div(v-else)
+    .font-weight-light(style="font-size: 2em") Te recomendamos estos Monitores
+    .subtitle Según los gustos que nos has indicado
+    v-btn.mt-4.text-capitalize(text, @click="resetTest") Repetir Test
+    v-layout.mt-4(wrap)
+      v-flex.pa-1(xs6, md3, v-for="(el, i) in monitores", :key="i")
+        product(:product="el", style="height: 100%")
 </template>
 
 <static-query>
@@ -49,7 +56,7 @@ export default {
     question,
     range,
     images,
-    product
+    product,
   },
   data() {
     return {
@@ -73,11 +80,11 @@ export default {
       this.actualTest = 0;
       this.isResult = false;
       this.monitores = this.$page.allProductPost.edges;
-    }
+    },
   },
   mounted() {
-    this.monitores = this.$page.allProductPost.edges
-  }
+    this.monitores = this.$page.allProductPost.edges;
+  },
 };
 </script>
 

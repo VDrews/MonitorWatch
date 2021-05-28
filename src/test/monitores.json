@@ -15,7 +15,7 @@
       },
       {
         "answer": "Creador de contenido",
-        "image": "https://image.freepik.com/foto-gratis/mujer-irreconocible-usando-laptop-cerca-libro_23-2147848138.jpg",
+        "image": "https://image.freepik.com/foto-gratis/vlogger_23-2148161784.jpg",
         "description": "Edición de texto, hojas de cálculo, presentaciones...",
         "orderByTag": "sRGB",
         "moreThan": {
@@ -25,25 +25,23 @@
       },
       {
         "answer": "Oficina",
-        "image": "https://image.freepik.com/foto-gratis/dispositivo-moderno-app-netflix_23-2147915410.jpg",
+        "image": "https://image.freepik.com/foto-gratis/mujer-irreconocible-usando-laptop-cerca-libro_23-2147848138.jpg",
         "description": "Uso general de oficina",
         "lessThan": {
-          "frec": 75,
-          "res": 1440,
-          "price": 250
+          "price": 300
         },
         "next": 3
       },
       {
         "answer": "Ver películas",
-        "image": "https://image.freepik.com/vector-gratis/diseno-grafico-papel-pintado-geometrico_52683-34399.jpg",
+        "image": "https://image.freepik.com/foto-gratis/dispositivo-moderno-app-netflix_23-2147915410.jpg",
         "description": "Uso para ver películas o series",
         "orderByTag": "Resolucion",
         "next": 4
       },
       {
         "answer": "Uso General",
-        "image": "https://image.freepik.com/foto-gratis/vlogger_23-2148161784.jpg",
+        "image": "https://image.freepik.com/vector-gratis/diseno-grafico-papel-pintado-geometrico_52683-34399.jpg",
         "description": "No tengo ninguna preferencia en particular",
         "next": 1
       }
