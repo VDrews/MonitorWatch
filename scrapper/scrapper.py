@@ -110,34 +110,9 @@ def get_data(pageNo, q, linkItem):
 if __name__ == "__main__":
     linkList = [
         {
-            "link": 'https://www.dynos.es/monitores/27-pulgadas/2560-x-1440',
-            "attrs": {"inches": 27, "res": 1440, "tags": ["Audio", "Gaming"], "show": [
-                "1440p", "Gaming"], "res_time": 5, "frec": 60}
-        },
-        {
             "link": "https://www.dynos.es/monitores/27-pulgadas/2560-x-1440/1-ms",
             "attrs": {"inches": 27, "res": 1440, "tags": ["Audio", "Gaming"], "show": [
                 "1440p", "Gaming", "1ms"], "res_time": 10, "frec": 60}
-        },
-        {
-            "link": "https://www.dynos.es/monitores/31-5-pulgadas/2560-x-1440",
-            "attrs": {"inches": 31.5, "res": 1440, "tags": ["Gaming"], "show": [
-                "1440p", "Gaming"], "res_time": 5, "frec": 60}
-        },
-        {
-            "link": "https://www.dynos.es/monitores/22-pulgadas/1920-x-1080-full-hd",
-            "attrs": {"inches": 22, "res": 1080, "tags": [], "show": [
-                "Full HD"], "res_time": 5, "frec": 60}
-        },
-        {
-            "link": "https://www.dynos.es/monitores/31-5-pulgadas/1920-x-1080-full-hd",
-            "attrs": {"inches": 31.5, "res": 1080, "tags": ["Gaming"], "show": [
-                "Full HD", "Gaming"], "res_time": 5, "frec": 165}
-        },
-        {
-            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming",
-            "attrs": {"inches": 24, "res": 1080, "tags": ["Gaming"], "show": [
-                "Full HD", "Gaming"], "res_time": 5, "frec": 144}
         },
         {
             "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming/altavoces",
@@ -145,9 +120,9 @@ if __name__ == "__main__":
                 "Full HD", "Gaming"], "res_time": 5, "frec": 144}
         },
         {
-            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/",
-            "attrs": {"inches": 24, "res": 1080, "tags": [], "show": [
-                "Full HD"], "res_time": 5, "frec": 60}
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/gaming/altavoces",
+            "attrs": {"inches": 27, "res": 1080, "tags": ["Gaming", "Audio"], "show": [
+                "Full HD", "Gaming"], "res_time": 3, "frec": 144}
         },
         {
             "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/altavoces",
@@ -160,24 +135,14 @@ if __name__ == "__main__":
                 "Full HD", "Gaming"], "res_time": 5, "frec": 60}
         },
         {
-            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/gaming/altavoces",
-            "attrs": {"inches": 27, "res": 1080, "tags": ["Gaming", "Audio"], "show": [
-                "Full HD", "Gaming"], "res_time": 3, "frec": 144}
-        },
-        {
             "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/altavoces",
             "attrs": {"inches": 27, "res": 1080, "tags": ["Audio"], "show": [
                 "Full HD"], "res_time": 8, "frec": 60}
         },
         {
-            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/",
-            "attrs": {"inches": 27, "res": 1080, "tags": [], "show": [
-                "Full HD"], "res_time": 10, "frec": 60}
-        },
-        {
-            "link": "https://www.dynos.es/monitores/27-pulgadas/3840-x-2160-uhd",
-            "attrs": {"inches": 27, "res": 2160, "tags": ["Audio"], "show": [
-                "UHD", "Display Port"], "res_time": 5, "frec": 60}
+            "link": 'https://www.dynos.es/monitores/27-pulgadas/2560-x-1440',
+            "attrs": {"inches": 27, "res": 1440, "tags": ["Audio", "Gaming"], "show": [
+                "1440p", "Gaming"], "res_time": 5, "frec": 60}
         },
         {
             "link": "https://www.dynos.es/monitores/28-pulgadas/3840-x-2160-uhd",
@@ -185,9 +150,44 @@ if __name__ == "__main__":
                 "UHD", "Gaming"], "res_time": 1, "frec": 60}
         },
         {
+            "link": "https://www.dynos.es/monitores/31-5-pulgadas/2560-x-1440",
+            "attrs": {"inches": 31.5, "res": 1440, "tags": ["Gaming"], "show": [
+                "1440p", "Gaming"], "res_time": 5, "frec": 60}
+        },
+        {
             "link": "https://www.dynos.es/monitores/3840-x-2160-uhd/42-5-pulgadas",
             "attrs": {"inches": 42.5, "res": 2160, "tags": ["Audio", "Gaming"], "show": [
                 "UHD", "Gaming"], "res_time": 8, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/27-pulgadas/3840-x-2160-uhd",
+            "attrs": {"inches": 27, "res": 2160, "tags": ["Audio"], "show": [
+                "UHD", "Display Port"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/gaming",
+            "attrs": {"inches": 24, "res": 1080, "tags": ["Gaming"], "show": [
+                "Full HD", "Gaming"], "res_time": 5, "frec": 144}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/22-pulgadas/1920-x-1080-full-hd",
+            "attrs": {"inches": 22, "res": 1080, "tags": [], "show": [
+                "Full HD"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/31-5-pulgadas/1920-x-1080-full-hd",
+            "attrs": {"inches": 31.5, "res": 1080, "tags": ["Gaming"], "show": [
+                "Full HD", "Gaming"], "res_time": 5, "frec": 165}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/24-pulgadas/",
+            "attrs": {"inches": 24, "res": 1080, "tags": [], "show": [
+                "Full HD"], "res_time": 5, "frec": 60}
+        },
+        {
+            "link": "https://www.dynos.es/monitores/1920-x-1080-full-hd/27-pulgadas/",
+            "attrs": {"inches": 27, "res": 1080, "tags": [], "show": [
+                "Full HD"], "res_time": 10, "frec": 60}
         },
     ]
     linkIndex = 0
@@ -224,6 +224,8 @@ if __name__ == "__main__":
                       linkList[linkIndex]["attrs"]["tags"], "show": linkList[linkIndex]["attrs"]["show"], "frec": linkList[linkIndex]["attrs"]["frec"], "res_time": linkList[linkIndex]["attrs"]["res_time"], "url": urls[qcount-1], "img": images[qcount-1]}
             if not any(d['_id'] == result["_id"] for d in lista_result):
                 lista_result.append(dict(result))
+            else:
+                print("REPETIDO:" + result["_id"])
         print("total time taken: ", str(
             time.time()-startTime), " qcount: ", qcount)
         print([len(products), len(brands), len(prices),

@@ -4,11 +4,11 @@
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
 // Select the database to use.
-use('mongodbVSCodePlaygroundDB');
+use('monitorwatch');
 
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
-db.products.drop();
+db.monitores.drop();
 
 // Insert a few documents into the sales collection.
 // db.sales.insertMany([
