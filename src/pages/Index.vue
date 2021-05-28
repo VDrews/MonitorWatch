@@ -8,13 +8,15 @@ Layout
       )
         .pa-6.pb-6(style="max-width: 1000px; width: 100%")
           h1 MonitorWatch
-          p Encuentra Monitor de la manera más sencilla haciendo nuestro test
+          p Encuentra tu monitor de la manera más sencilla haciendo nuestro test
           test
-        //- h2 🔥 Los {{page.product}} más comprados
-        //- v-layout.mt-4(wrap)
-        //-   v-flex.pa-1(xs6, md3, v-for="(el, i) in monitores", :key="i")
-        //-     product(:product="el", style="height: 100%")
-        //- h2 Otros Tests
+    v-footer.mt-12
+      .container
+        p Creado por
+        p Manuel Cano | Andrés García | José Mª Poblador
+        span UGR | ISI | 2021 |
+        i.fa.fa-value(aria-hidden="true") &nbsp;
+        a(href="https://github.com/VDrews/MonitorWatch") Ver Github
 </template>
 
 <page-query>
